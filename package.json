@@ -4,7 +4,7 @@
   "description": "O2System Base UI",
   "main": "dist/venus.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gulp watch"
   },
   "repository": {
     "type": "git",
@@ -31,7 +31,9 @@
     "gulp-babel": "^8.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-eslint": "^5.0.0",
+    "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.4",
-    "gulp-uglify": "^3.0.1"
+    "gulp-uglify": "^3.0.1",
+    "node-sass": "^4.10.0"
   }
 }
