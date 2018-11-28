@@ -24,7 +24,7 @@
     "@fortawesome/fontawesome-free": "^5.5.0",
     "popper": "^1.0.1",
     "bootstrap": "^4.1.3",
-    "o2system-espresso": "0.0.2"
+    "o2system-espresso": "*"
   },
   "devDependencies": {
     "@babel/core": "^7.1.6",
