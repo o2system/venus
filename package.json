@@ -4,7 +4,9 @@
   "description": "O2System Base UI",
   "main": "dist/venus.js",
   "scripts": {
-    "build": "gulp watch"
+    "build": "gulp watch",
+    "watch": "gulp jekyll && jekyll serve",
+    "prod": "npm "
   },
   "repository": {
     "type": "git",
@@ -29,13 +31,21 @@
   "devDependencies": {
     "@babel/core": "^7.1.6",
     "@babel/preset-env": "^7.1.6",
+    "browser-sync": "^2.26.3",
+    "browserify": "^16.2.2",
+    "browserify-shim": "^3.8.14",
     "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
     "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-eslint": "^5.0.0",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-uglify": "^3.0.1",
-    "node-sass": "^4.10.0"
+    "node-sass": "^4.10.0",
   }
 }
