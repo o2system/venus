@@ -9,7 +9,7 @@ const eslint = require('gulp-eslint');
 sass.compiler = require('node-sass');
 
 gulp.task('sass', function () {
-  return gulp.src('scss/venus.scss')
+  return gulp.src('./src/scss/venus.scss')
     .pipe(sass().on('error', sass.logError))
 
     .pipe(sourcemaps.init())
@@ -19,7 +19,7 @@ gulp.task('sass', function () {
 
 gulp.task('js', () =>
 	gulp.src([
-		'js/*.js'
+		'./src/js/*.js'
 		])
 	.pipe(eslint({
 		rules: {
@@ -71,3 +71,5 @@ gulp.task('watch', function () {
         // gulp.run('js');
     });
 });
+
+gulp.task('default', [ 'js', 'sass' ]);
