@@ -2,11 +2,11 @@
   "name": "o2system-venus",
   "version": "0.0.3",
   "description": "O2System Base UI",
-  "main": "dist/venus.js",
+  "main": "dist/js/venus.js",
+  "style": "dist/css/venus.js",
   "scripts": {
-    "build": "gulp watch",
-    "watch": "gulp jekyll && jekyll serve",
-    "prod": "npm "
+    "watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/webpack-mix/setup/webpack.config.js & jekyll build --watch",
+    "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/webpack-mix/setup/webpack.config.js && jekyll build"
   },
   "repository": {
     "type": "git",
@@ -29,23 +29,14 @@
     "o2system-espresso": "*"
   },
   "devDependencies": {
-    "@babel/core": "^7.1.6",
-    "@babel/preset-env": "^7.1.6",
     "browser-sync": "^2.26.3",
-    "browserify": "^16.2.2",
-    "browserify-shim": "^3.8.14",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^6.0.0",
-    "gulp-babel": "^8.0.0",
-    "gulp-clean-css": "^4.0.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-eslint": "^5.0.0",
-    "gulp-load-plugins": "^1.5.0",
-    "gulp-plumber": "^1.2.1",
-    "gulp-rename": "^1.4.0",
-    "gulp-sass": "^4.0.2",
-    "gulp-sourcemaps": "^2.6.4",
-    "gulp-uglify": "^3.0.1",
-    "node-sass": "^4.10.0",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "cross-env": "^5.2.0",
+    "eslint": "^5.9.0",
+    "fs-extra": "^7.0.1",
+    "jshint": "^2.9.6",
+    "postcss": "^7.0.6",
+    "postcss-cssnext": "^3.1.0",
+    "webpack-mix": "^2.0.2"
   }
 }
