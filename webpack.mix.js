@@ -1,5 +1,4 @@
-let mix = require('webpack-mix').mix;
-const fs = require('fs-extra');
+let mix = require('webpack-mix').mix
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -14,20 +13,20 @@ mix.setPublicPath('demo')
 	.js('src/_assets/js/venus.js', 'js/')
 	.sass('src/_assets/scss/venus.scss', 'css/')
 
-.copy('./demo/css/venus.css', './dist/venus.css')
+	.copy('./demo/css/venus.css', './dist/venus.css')
 	.copy('./demo/js/venus.js', './dist/venus.js')
 
-.webpackConfig({
-	devtool: 'source-map'
-})
-.sourceMaps();
+	.webpackConfig({
+		devtool: 'source-map'
+	})
+	.sourceMaps()
 
 if (!mix.inProduction()){
 	mix.browserSync({
 		browser: 'Google Chrome',
 		proxy: false,
 		server: {
-			baseDir: "./demo",
+			baseDir: './demo',
 		},
 		files: ['./demo/**/*.html', './demo/**/*.js', './demo/**/*.css']
 	})

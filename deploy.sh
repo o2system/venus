@@ -2,11 +2,16 @@
 
 set -e
 
- 1539  git checkout -b gh-pages
- 1540  npm run production
- 1541  git add demo
- 1542  git add demo -f
- 1543  git status
- 1544  git commit -m 'deploy to github pages'
+exists=`git show-ref refs/heads/gh-pages`
+if [[ -n "$exists" ]]; then
+    git checkout gh-pages
+fi
+
+git checkout gh-pages
+
+npm run production
+git add demo -f
+git commit -m 'deploy to github pages'
+git push origin/gh-pages
 
 

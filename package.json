@@ -5,8 +5,15 @@
   "main": "dist/js/venus.js",
   "style": "dist/css/venus.js",
   "scripts": {
-    "watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/webpack-mix/setup/webpack.config.js & jekyll build --watch",
-    "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/webpack-mix/setup/webpack.config.js && jekyll build"
+    "dev": "npm run development",
+    "development": "concurrently --kill-others \"npm run webpack:watch\" \"npm run jekyll:serve\"",
+    "prod": "npm run production",
+    "production": "npm run webpack:build && npm run jekyll:build",
+    "clean": "rimraf _site _data/mix-manifest.json .sass-cache  .jekyll-metadata mix-manifest.json",
+    "jekyll:serve": "bundle exec jekyll serve",
+    "jekyll:build": "bundle exec jekyll build",
+    "webpack:watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/webpack-mix/setup/webpack.config.js",
+    "webpack:build": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/webpack-mix/setup/webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -31,6 +38,7 @@
   "devDependencies": {
     "browser-sync": "^2.26.3",
     "browser-sync-webpack-plugin": "^2.2.2",
+    "concurrently": "^4.1.0",
     "cross-env": "^5.2.0",
     "eslint": "^5.9.0",
     "fs-extra": "^7.0.1",
