@@ -23,11 +23,11 @@ mix.setPublicPath('demo')
 
 if (!mix.inProduction()){
 	mix.browserSync({
-		browser: 'Google Chrome',
+		browser: 'chromium-browser',
 		proxy: false,
 		server: {
 			baseDir: './demo',
 		},
-		files: ['./demo/**/*.html', './demo/**/*.js', './demo/**/*.css']
+		// files: ['./demo/**/*.html', './demo/**/*.js', './demo/**/*.css']
 	})
 }
