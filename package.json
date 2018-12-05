@@ -5,7 +5,7 @@
   "main": "dist/js/venus.js",
   "style": "dist/css/venus.js",
   "scripts": {
-    "dev": "npm run development",
+    "dev": "npm run jekyll:serve & webpack:watch",
     "development": "concurrently --kill-others \"npm run webpack:watch\" \"npm run jekyll:serve\"",
     "prod": "npm run production",
     "production": "npm run webpack:build && npm run jekyll:build",
