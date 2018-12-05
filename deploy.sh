@@ -13,5 +13,3 @@ npm run production
 git add demo -f
 git commit -m 'deploy to github pages'
 git push origin/gh-pages
-
-
