@@ -20,7 +20,7 @@ mix.setPublicPath('src')
 		devtool: 'source-map'
 	})
 	.sourceMaps()
-
+	
 // if (!mix.inProduction()){
 // 	mix.browserSync({
 // 		/*browser: 'Google Chrome',*/
