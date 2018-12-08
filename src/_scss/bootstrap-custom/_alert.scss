@@ -8,6 +8,20 @@
   margin-bottom: $alert-margin-bottom;
   border: $alert-border-width solid transparent;
   @include border-radius($alert-border-radius);
+  padding: 1rem 1.5rem;
+  display: flex;
+
+  .alert-icon{
+    margin-right: 1rem;
+  }
+
+  .close{
+    color: $white;
+    font-size: 1rem;
+    position: absolute;
+    right: 1.5rem;
+    top: 17px;
+  }
 }
 
 // Headings for larger alerts
