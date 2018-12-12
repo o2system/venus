@@ -1,62 +1,35 @@
 {
   "name": "o2system-venus",
-  "description": "O2System User Interface Framework.",
   "version": "1.0.0",
-  "homepage": "https://github.com/o2system/venus",
+  "description": "O2System User Interface Framework",
   "main": "./dist/venus.js",
-  "style": "./dist/assets/venus.css",
-  "author": {
-    "name": "Steeven Andrian Salim",
-    "email": "steeven@o2system.id",
-    "url": "https://venus.o2system.id"
-  },
-  "scripts": {
-    "dev": "npm run webpack:watch && npm run jekyll:serve",
-    "development": "concurrently --kill-others \"npm run webpack:watch\" \"npm run jekyll:serve\"",
-    "prod": "npm run production",
-    "production": "npm run webpack:build && npm run jekyll:build",
-    "clean": "rimraf _site _data/mix-manifest.json .sass-cache  .jekyll-metadata mix-manifest.json",
-    "jekyll:serve": "bundle exec jekyll serve",
-    "jekyll:build": "bundle exec jekyll build",
-    "webpack:watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/webpack-mix/setup/webpack.config.js",
-    "webpack:build": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/webpack-mix/setup/webpack.config.js"
-  },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/o2system/venus/issues",
-    "email": "steeven@o2system.id"
-  },
+  "style": "./dist/venus.css",
   "repository": {
     "type": "git",
-    "url": "git://github.com/o2system/venus.git"
-  },
-  "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.5.0",
-    "bootstrap": "^4.1.3",
-    "o2system-espresso": ">=1.0.0",
-    "owl.carousel": "^2.3.4",
-    "popper.js": "^1.14.6"
-  },
-  "devDependencies": {
-    "autoprefixer": "^9.4.2",
-    "browser-sync": "^2.26.3",
-    "browser-sync-webpack-plugin": "^2.2.2",
-    "concurrently": "^4.1.0",
-    "cross-env": "^5.2.0",
-    "cssnano": "^4.1.7",
-    "eslint": "^5.9.0",
-    "fs-extra": "^7.0.1",
-    "jshint": "^2.9.6",
-    "postcss": "^7.0.6",
-    "postcss-cssnext": "^3.1.0",
-    "postcss-unprefix": "^2.1.3",
-    "webpack-mix": "^2.0.2"
+    "url": "git+https://github.com/o2system/venus.git"
   },
   "keywords": [
-    "responsive",
-    "carousel",
-    "owlcarousel",
-    "jQuery",
-    "plugin"
-  ]
+    "o2system",
+    "venus",
+    "user interface"
+  ],
+  "author": "Steeven Andrian Salim <steeven@o2system.id> (https://o2system.id/team/profile/steeven)",
+  "contributors": [
+    "Teguh Rianto <teguh@o2system.id> (https://o2system.id/team/profile/teguh)",
+    "Alfian Imanuddin <alfian@o2system.id> (https://o2system.id/team/profile/alfian)",
+    "Nur Wachid <nur.wachid@o2system.id> (https://o2system.id/team/profile/nur-wachid)"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/o2system/venus/issues"
+  },
+  "homepage": "https://github.com/o2system/venus#readme",
+  "dependencies": {
+    "o2system-espresso": "^1.0.0",
+    "bootstrap": "^4.1.3",
+    "owl.carousel": "^2.3.4"
+  },
+  "devDependencies": {
+    "pretty": "^1.0.0"
+  }
 }
