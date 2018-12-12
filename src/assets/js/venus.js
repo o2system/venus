@@ -60,35 +60,32 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
-/******/ ({
-
-/***/ 1:
+/******/ ([
+/* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(2);
-module.exports = __webpack_require__(6);
+__webpack_require__(1);
+module.exports = __webpack_require__(4);
 
 
 /***/ }),
-
-/***/ 2:
+/* 1 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_owl_carousel__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_owl_carousel__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_owl_carousel___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_owl_carousel__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__custom_js__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__custom_js__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__custom_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__custom_js__);
 
 
 
 /***/ }),
-
-/***/ 27:
+/* 2 */
 /***/ (function(module, exports) {
 
 /**
@@ -3542,23 +3539,64 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 /***/ }),
-
-/***/ 28:
+/* 3 */
 /***/ (function(module, exports) {
 
-$(function () {
-  $('[data-toggle="popover"]').popover();
-  $('[data-toggle="tooltip"]').tooltip();
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+$(document).ready(function () {
+    var _$$owlCarousel;
+
+    $(function () {
+        $('[data-toggle="popover"]').popover();
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+    $('.testimonial-slider').owlCarousel({
+        loop: true,
+        margin: 10,
+        items: 1,
+        autoplay: true,
+        smartSpeed: 2500,
+        autoplaySpeed: false,
+        responsiveClass: true,
+        nav: true,
+        dot: true,
+        stagePadding: 0,
+        navText: ['<i class="fas fa-long-arrow-alt-left"></i>', '<i class="fas fa-long-arrow-alt-right"></i>'],
+        navContainer: '.nav-container'
+    });
+    $('.screenshot-slider').owlCarousel((_$$owlCarousel = {
+        loop: true,
+        margin: 10,
+        items: 5,
+        autoplay: false,
+        smartSpeed: 2000,
+        responsiveClass: true,
+        nav: true,
+        dots: false,
+        navText: ['<i class="fas fa-long-arrow-alt-left"></i>', '<i class="fas fa-long-arrow-alt-right"></i>']
+    }, _defineProperty(_$$owlCarousel, 'responsiveClass', true), _defineProperty(_$$owlCarousel, 'responsive', {
+        0: {
+            items: 1
+        },
+        650: {
+            items: 2
+        },
+        776: {
+            items: 4
+        },
+        1199: {
+            items: 5
+        }
+    }), _$$owlCarousel));
 });
 
 /***/ }),
-
-/***/ 6:
+/* 4 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ })
-
-/******/ });
+/******/ ]);
 //# sourceMappingURL=venus.js.map

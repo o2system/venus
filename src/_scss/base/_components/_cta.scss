@@ -1,0 +1,99 @@
+.get-started{
+    background-image: linear-gradient(140deg, $primary 0%, lighten($primary, 15%) 100%);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    color: $white;
+    .shape{
+        opacity: 0.03;
+        &.one{
+            background: white;
+            top: -290px;
+            left: -50px;
+        }
+        &.two{
+            background: white;
+            top: -260px;
+            left: 100px;
+        }
+        &.three{
+            background: white;
+            top: auto;
+            left: 47%;
+            bottom: -300px;
+        }
+        &.four{
+            background: white;
+            top: auto;
+            left: 63%;
+            bottom: -280px;
+        }
+    }
+    h3{
+        font-size: 24px;
+        font-weight: 400;
+    }
+    h2{
+        margin-bottom: 20px;
+        font-weight: 700;
+        line-height: 50px;
+        font-size: 40px;
+    }
+    p{
+        margin-bottom: 40px;
+        font-weight: 300;
+    }
+    .btn{
+        padding: 12px 34px;
+        border-color: $white;
+        background: $white;
+        line-height: 27px;
+        -webkit-transition: all 0.2s linear;
+        -o-transition: all 0.2s linear;
+        transition: all 0.2s linear;
+        min-width: 200px;
+        text-align: center;
+        -webkit-box-shadow: 0px 20px 30px 0px rgba(12, 0, 46, 0.1);
+        box-shadow: 0px 20px 30px 0px rgba(12, 0, 46, 0.1);
+        background-color: $primary;
+        display: inline-block;
+        padding: 14px 40px;
+        color: $white;
+        border-radius: 45px;
+        border: 1px solid $primary;
+        i{
+            font-size: 25px;
+            padding-right: 10px;
+            vertical-align: sub;
+            font-style: unset;
+        }
+        &.one{
+            background: $white;
+            border: 1px solid $white;
+            color: $primary;
+            vertical-align: middle;
+            img{
+                padding-right: 12px;
+            }
+            &:hover{
+                background: rgba(255, 255, 255, 0.1);
+                border: 1px solid $white;
+                color: $white;
+            }
+        }
+        &.two{
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid $white;
+            vertical-align: middle;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            margin-left: 20px;
+            
+            &:hover{
+                background: $white;
+                border: 1px solid $white;
+                color: $primary;
+            }
+        }
+    }
+}
