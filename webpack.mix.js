@@ -20,6 +20,22 @@ mix.setPublicPath('src')
 		devtool: 'source-map'
 	})
 	.sourceMaps()
+
+	.options({
+    postCss: [
+      require('postcss-unprefix'),
+      require('autoprefixer')({
+        browsers: '>0.1%'
+      }),
+      require('cssnano')({
+          preset: ['default', {
+              discardComments: {
+                  removeAll: true,
+              },
+          }]
+      }),
+    ]
+  });
 	
 // if (!mix.inProduction()){
 // 	mix.browserSync({
