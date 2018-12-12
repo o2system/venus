@@ -31,9 +31,9 @@
     "url": "git://github.com/o2system/venus.git"
   },
   "dependencies": {
-    "o2system-espresso": ">=1.0.0",
     "@fortawesome/fontawesome-free": "^5.5.0",
     "bootstrap": "^4.1.3",
+    "o2system-espresso": ">=1.0.0",
     "owl.carousel": "^2.3.4",
     "popper.js": "^1.14.6"
   },
