@@ -2,6 +2,7 @@
   "name": "o2system-venus",
   "version": "1.0.0",
   "description": "O2System User Interface Framework",
+  "homepage": "https://venus.o2system.id",
   "main": "./dist/venus.js",
   "style": "./dist/venus.css",
   "repository": {
@@ -23,9 +24,10 @@
   "bugs": {
     "url": "https://github.com/o2system/venus/issues"
   },
-  "homepage": "https://github.com/o2system/venus#readme",
   "dependencies": {
+    "npm": "^6.4.1",
     "o2system-espresso": "^1.0.0",
+    "popper.js": "^1.14.6",
     "bootstrap": "^4.1.3",
     "owl.carousel": "^2.3.4"
   },
