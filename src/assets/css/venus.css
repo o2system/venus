@@ -17124,7 +17124,6 @@ a.text-dark:focus {
 
 .banner-0 {
   background-image: linear-gradient(40deg, #3498db 0%, #a0cfee 100%);
-  background-image: -ms-linear-gradient(40deg, #3498db 0%, #a0cfee 100%);
   height: 100vh;
   background-size: cover;
   background-position: 50%;
@@ -18977,7 +18976,6 @@ section {
   width: 100%;
   height: 100%;
   background-image: linear-gradient(40deg, #3498db 70%, #16527a 100%);
-  background-image: -ms-linear-gradient(40deg, #3498db 70%, #16527a 100%);
   opacity: 0.8;
 }
 

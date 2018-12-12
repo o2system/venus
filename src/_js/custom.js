@@ -1,3 +1,6 @@
+import * as $ from 'jquery';
+import owlCarousel from 'owl.carousel';
+
 $(document).ready(function(){
 	$(function () {
 		$('[data-toggle="popover"]').popover();
