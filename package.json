@@ -1,6 +1,5 @@
 {
   "name": "o2system-venus",
-<<<<<<< HEAD
   "description": "O2System User Interface Framework.",
   "version": "1.0.0",
   "homepage": "https://github.com/o2system/venus",
@@ -10,11 +9,7 @@
     "name": "Steeven Andrian Salim",
     "email": "steeven@o2system.id",
     "url": "https://venus.o2system.id"
-=======
-  "version": "0.0.3",
-  "description": "O2System Base UI",
-  "main": "dist/js/venus.js",
-  "style": "dist/css/venus.js",
+  },
   "scripts": {
     "dev": "npm run webpack:watch && npm run jekyll:serve",
     "development": "concurrently --kill-others \"npm run webpack:watch\" \"npm run jekyll:serve\"",
@@ -25,7 +20,6 @@
     "jekyll:build": "bundle exec jekyll build",
     "webpack:watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/webpack-mix/setup/webpack.config.js",
     "webpack:build": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/webpack-mix/setup/webpack.config.js"
->>>>>>> d72df343bc677597d73b1874e996ef2212821de8
   },
   "license": "MIT",
   "bugs": {
@@ -39,14 +33,9 @@
   "dependencies": {
     "o2system-espresso": ">=1.0.0",
     "@fortawesome/fontawesome-free": "^5.5.0",
-<<<<<<< HEAD
-    "bootstrap": "^4.1.3"
-=======
     "bootstrap": "^4.1.3",
     "owl.carousel": "^2.3.4",
-    "o2system-espresso": "0.0.2",
     "popper.js": "^1.14.6"
->>>>>>> d72df343bc677597d73b1874e996ef2212821de8
   },
   "devDependencies": {
     "autoprefixer": "^9.4.2",
