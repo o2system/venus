@@ -2,8 +2,8 @@
 
 set -e
 
-exists=`git show-ref refs/heads/gh-pages`
-if [[ -n "$exists" ]]; then
+EXIST=`git show-ref refs/heads/gh-pages`
+if [[ -n "$EXIST" ]]; then
     git checkout gh-pages
 fi
 
