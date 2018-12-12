@@ -1,50 +1,49 @@
 {
   "name": "o2system-venus",
-  "version": "0.0.3",
-  "description": "O2System Base UI",
-  "main": "dist/js/venus.js",
-  "style": "dist/css/venus.js",
-  "scripts": {
-    "dev": "npm run jekyll:serve & webpack:watch",
-    "development": "concurrently --kill-others \"npm run webpack:watch\" \"npm run jekyll:serve\"",
-    "prod": "npm run production",
-    "production": "npm run webpack:build && npm run jekyll:build",
-    "clean": "rimraf _site _data/mix-manifest.json .sass-cache  .jekyll-metadata mix-manifest.json",
-    "jekyll:serve": "bundle exec jekyll serve",
-    "jekyll:build": "bundle exec jekyll build",
-    "webpack:watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/webpack-mix/setup/webpack.config.js",
-    "webpack:build": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/webpack-mix/setup/webpack.config.js"
+  "description": "O2System User Interface Framework.",
+  "version": "1.0.0",
+  "homepage": "https://github.com/o2system/venus",
+  "main": "./dist/venus.js",
+  "style": "./dist/assets/venus.css",
+  "author": {
+    "name": "Steeven Andrian Salim",
+    "email": "steeven@o2system.id",
+    "url": "https://venus.o2system.id"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/o2system/venus/issues",
+    "email": "steeven@o2system.id"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/o2system/venus.git"
+    "url": "git://github.com/o2system/venus.git"
   },
-  "keywords": [
-    "Bootstrap",
-    "UI"
-  ],
-  "author": "O2System",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/o2system/venus/issues"
-  },
-  "homepage": "https://github.com/o2system/venus#readme",
   "dependencies": {
+    "o2system-espresso": ">=1.0.0",
     "@fortawesome/fontawesome-free": "^5.5.0",
-    "popper": "^1.0.1",
-    "bootstrap": "^4.1.3",
-    "o2system-espresso": "*"
+    "bootstrap": "^4.1.3"
   },
   "devDependencies": {
+    "autoprefixer": "^9.4.2",
     "browser-sync": "^2.26.3",
     "browser-sync-webpack-plugin": "^2.2.2",
     "concurrently": "^4.1.0",
     "cross-env": "^5.2.0",
+    "cssnano": "^4.1.7",
     "eslint": "^5.9.0",
     "fs-extra": "^7.0.1",
     "jshint": "^2.9.6",
     "postcss": "^7.0.6",
     "postcss-cssnext": "^3.1.0",
+    "postcss-unprefix": "^2.1.3",
     "webpack-mix": "^2.0.2"
-  }
+  },
+  "keywords": [
+    "responsive",
+    "carousel",
+    "owlcarousel",
+    "jQuery",
+    "plugin"
+  ]
 }

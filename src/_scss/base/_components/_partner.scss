@@ -1,0 +1,33 @@
+.partner-logo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 100px;
+    border-bottom: 1px solid #eeeef5;
+    padding-bottom: 35px;
+    position: relative;
+    z-index: 4;
+    .logo-item{
+        width: calc(100% / 5);
+        text-align: center;
+        @include device(mobile) {
+            width: calc(100% / 2);
+        }
+
+        @include device(tablet) {
+            width: calc(100% / 4);
+        }
+        img{
+            max-width: 100%;
+            filter: contrast(0.3%);
+            transition: all 0.3s ease 0s;
+        }
+
+        &:hover{
+            img{
+                filter: contrast(100%);
+            }
+        }
+    }
+
+}

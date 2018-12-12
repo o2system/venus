@@ -1,21 +1,19 @@
 .demo{
 	.banner{
+		padding: 0;
+	}
+	.banner-0{
+		background-position: bottom;
+		background-size: cover;
 		padding-bottom: 80px;
-		&.banner-1{
-			background-position: bottom;
-			background-size: cover;
-
-			&:before{
-				position: absolute;
-				content: "";
-				width: 100%;
-				height: 100%;
-				background-image: linear-gradient( 40deg, $primary 70%, darken($primary, 25%) 100%);
-				background-image: -moz-linear-gradient( 40deg, $primary 70%, darken($primary, 25%) 100%);
-			    background-image: -webkit-linear-gradient( 40deg, $primary 70%, darken($primary, 25%) 100%);
-			    background-image: -ms-linear-gradient( 40deg, $primary 70%, darken($primary, 25%) 100%);
-			    opacity: 0.8;
-			}
+		background-image: none;
+		&:before{
+			position: absolute;
+			content: "";
+			width: 100%;
+			height: 100%;
+			background-image: linear-gradient( 40deg, $primary 70%, darken($primary, 25%) 100%);
+			opacity: 0.8;
 		}
 	}
 	section{
@@ -40,4 +38,5 @@
 			margin-bottom: 1.5rem;
 		}
 	}
+
 }

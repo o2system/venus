@@ -1,0 +1,43 @@
+footer{
+	padding: 80px 0;
+
+	.title{
+		margin-bottom: 2rem;
+
+		h1, h2{
+			color: $white;
+		}
+	}
+
+	.social-media{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 2rem;
+		a{
+			width: 40px;
+			height: 40px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: 0 10px;
+			background-color: $white;
+			color: $body-color;
+			border-radius: 50%;
+			@include transition($transition-base);
+
+			&:hover{
+				transform: translateY(-5px);
+				color: $primary;
+			}
+		}
+	}
+
+	.copyright{
+		p{
+			text-align: center;
+			color: $white;
+			margin-bottom: 0;
+		}
+	}
+}
