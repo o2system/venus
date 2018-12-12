@@ -1,8 +1,12 @@
+window.Popper = require('popper.js').default;
+
 try {
-    window.Popper = require('popper.js').default;
-    window.$ = window.jQuery = require('o2system-espresso');
+    
+    window.$ = window.jQuery = require('jquery');
 
     require('bootstrap');
+    require('./custom.js');
+    require('./custom-bootstrap.js');
 } catch (e) {
     console.log(e);
 }

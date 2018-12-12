@@ -3,7 +3,7 @@
 // Variables should follow the `$component-state-property-size` formula for
 // consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
 //
 // Color system
 //
@@ -252,13 +252,14 @@ $transition-collapse:         height .35s ease !default;
 // Font, line-height, and color for body text, headings, and more.
 
 // stylelint-disable value-keyword-case
-$font-open-sans:              'Open Sans', sans-serif;
+$font-open-sans:              'Poppins', sans-serif;
 $font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base:            $font-open-sans !default;
 // stylelint-enable value-keyword-case
 
 $font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$font-size-xl:                ($font-size-base * 1.75) !default;
 $font-size-lg:                ($font-size-base * 1.25) !default;
 $font-size-sm:                ($font-size-base * .875) !default;
 $font-size-xs:                ($font-size-base * .675) !default;;
@@ -362,16 +363,20 @@ $input-btn-focus-color:       rgba($component-active-bg, .25) !default;
 $input-btn-focus-box-shadow:  none !default;
 
 $input-btn-padding-y-xs:      .125rem !default;
-$input-btn-padding-x-xs:      .45rem !default;
+$input-btn-padding-x-xs:      .65rem !default;
 $input-btn-line-height-xs:    $line-height-xs !default;
 
 $input-btn-padding-y-sm:      .25rem !default;
-$input-btn-padding-x-sm:      .5rem !default;
+$input-btn-padding-x-sm:      .85rem !default;
 $input-btn-line-height-sm:    $line-height-sm !default;
 
-$input-btn-padding-y-lg:      .5rem !default;
-$input-btn-padding-x-lg:      1rem !default;
+$input-btn-padding-y-lg:      .8rem !default;
+$input-btn-padding-x-lg:      1.5rem !default;
 $input-btn-line-height-lg:    $line-height-lg !default;
+
+$input-btn-padding-y-xl:      1rem !default;
+$input-btn-padding-x-xl:      1.75rem !default;
+$input-btn-line-height-xl:    $line-height-lg !default;
 
 $input-btn-border-width:      $border-width !default;
 
@@ -401,10 +406,16 @@ $btn-padding-y-lg:            $input-btn-padding-y-lg !default;
 $btn-padding-x-lg:            $input-btn-padding-x-lg !default;
 $btn-line-height-lg:          $input-btn-line-height-lg !default;
 
+$btn-padding-y-xl:            $input-btn-padding-y-xl !default;
+$btn-padding-x-xl:            $input-btn-padding-x-xl !default;
+$btn-line-height-xl:          $input-btn-line-height-xl !default;
+
+$btn-padding-left-xl:         70px;
 $btn-padding-left-lg:         60px;
 $btn-padding-left-sm:         40px;
 $btn-padding-left-xs:         25px;
 
+$btn-padding-i-xl:         16px;
 $btn-padding-i-lg:         12px;
 $btn-padding-i-sm:         8px;
 $btn-padding-i-xs:         4px;
@@ -424,6 +435,7 @@ $btn-block-spacing-y:         .5rem !default;
 
 // Allows for customizing button radius independently from global border radius
 $btn-border-radius:           $border-radius !default;
+$btn-border-radius-xl:        $border-radius-lg !default;
 $btn-border-radius-lg:        $border-radius-lg !default;
 $btn-border-radius-sm:        $border-radius-sm !default;
 $btn-border-radius-xs:        $border-radius-sm !default;
