@@ -58,18 +58,14 @@ section{
     left: 90px;
     z-index: -1;
     &.one{
-        background-image: -moz-linear-gradient( 140deg, rgb(125,13,240) 0%, rgb(12,182,231) 100%);
-        background-image: -webkit-linear-gradient( 140deg, rgb(125,13,240) 0%, rgb(12,182,231) 100%);
-        background-image: -ms-linear-gradient( 140deg, rgb(125,13,240) 0%, rgb(12,182,231) 100%);
+        background-image: linear-gradient( 140deg, rgb(125,13,240) 0%, rgb(12,182,231) 100%);
         width: 650px;
         height: 510px;
         top: -155%;
 
     }
     &.two{
-        background-image: -moz-linear-gradient( 140deg, rgb(125,13,240) 0%, rgb(12,182,231) 100%);
-        background-image: -webkit-linear-gradient( 140deg, rgb(125,13,240) 0%, rgb(12,182,231) 100%);
-        background-image: -ms-linear-gradient( 140deg, rgb(125,13,240) 0%, rgb(12,182,231) 100%);
+        background-image: linear-gradient( 140deg, rgb(125,13,240) 0%, rgb(12,182,231) 100%);
         width: 666px;
         height: 330px;
         top: -145%;

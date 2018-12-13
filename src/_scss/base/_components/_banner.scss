@@ -226,9 +226,7 @@
 }
 
 .banner-3{
-    background-image: -moz-linear-gradient(-50deg, $primary 0%, lighten($primary, 5%) 46%, lighten($primary, 35%) 100%);
-    background-image: -webkit-linear-gradient(-50deg, $primary 0%, lighten($primary, 5%) 46%, lighten($primary, 35%) 100%);
-    background-image: -ms-linear-gradient(-50deg, $primary 0%, lighten($primary, 5%) 46%, lighten($primary, 35%) 100%);
+    background-image: linear-gradient(-50deg, $primary 0%, lighten($primary, 5%) 46%, lighten($primary, 35%) 100%);
     padding: 230px 0px 140px;
     position: relative;
     z-index: 1;
@@ -279,30 +277,22 @@
                 font-weight: 300;
                 line-height: 28px;
             }
-            .btn-group{
+            .btn-primary{
+                display: inline-block;
                 margin-top: 40px;
-                display: -ms-flexbox!important;
-                display: flex!important;
-                -ms-flex-align: center!important;
-                align-items: center!important;
-                .btn-primary{
-                    overflow: hidden;
-                    display: inline-block;
-                    font-weight: 500;
-                    font-size: 14px;
-                    font-family: "Poppins",sans-serif;
-                    z-index: 1;
-                    cursor: pointer;
-                    transition: all 0.3s linear;
-                    background: #fff;
-                    color: #5e2ced;
-                    box-shadow: 0px 20px 30px 0px rgba(12,0,46,0.1);
-                    border-radius: 3px;
-                    padding: 16px 38px;
-                    border: 1px solid #fff;
-                    transition: all 0.2s linear;
-                    cursor: pointer;
-                }
+                overflow: hidden;
+                font-weight: 500;
+                z-index: 1;
+                cursor: pointer;
+                transition: all 0.3s linear;
+                background: #fff;
+                color: $primary;
+                box-shadow: 0px 20px 30px 0px rgba(12,0,46,0.1);
+                border-radius: 3px;
+                padding: 16px 38px;
+                border: 1px solid #fff;
+                transition: all 0.2s linear;
+                cursor: pointer;
             }
         }
     }
