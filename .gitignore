@@ -2,6 +2,7 @@ Gemfile.lock
 .idea
 .vscode
 demo
+*.map
 
 # Logs
 logs
