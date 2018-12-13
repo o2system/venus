@@ -9,6 +9,17 @@
     "type": "git",
     "url": "git+https://github.com/o2system/venus.git"
   },
+  "scripts": {
+    "dev": "npm run jekyll:serve & webpack:watch",
+    "development": "concurrently --kill-others \"npm run webpack:watch\" \"npm run jekyll:serve\"",
+    "prod": "npm run production",
+    "production": "npm run webpack:build && npm run jekyll:build",
+    "clean": "rimraf demo _data/mix-manifest.json .sass-cache  .jekyll-metadata mix-manifest.json",
+    "jekyll:serve": "bundle exec jekyll serve",
+    "jekyll:build": "bundle exec jekyll build",
+    "webpack:watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/webpack-mix/setup/webpack.config.js",
+    "webpack:build": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/webpack-mix/setup/webpack.config.js"
+},
   "keywords": [
     "o2system",
     "venus",
