@@ -9,25 +9,26 @@ let mix = require('webpack-mix').mix
  | file for your application, as well as bundling up your JS files.
  |
  */
-mix.setPublicPath('src')
-	.js('src/_js/venus.js', 'assets/js/')
-	.sass('src/_scss/venus.scss', 'assets/css/')
+ mix.setPublicPath('src')
+ .js('src/_js/venus.js', 'assets/js/')
+ .sass('src/_scss/venus.scss', 'assets/css/')
 
 	// .copy('./demo/css/venus.css', './dist/venus.css')
 	// .copy('./demo/js/venus.js', './dist/venus.js')
 
 	.webpackConfig({
 		devtool: 'source-map',
-    externals: {
-      'jquery': 'JQuery'
-    }
+		externals: {
+			'jquery': 'JQuery'
+		}
 	})
 	.sourceMaps()
-.options({
-  processCssUrls: false, // Process/optimize relative stylesheet url()'s. Set to false, if you don't want them touched.
-  // purifyCss: false, // Remove unused CSS selectors.
-  // uglify: {}, // Uglify-specific options. https://webpack.github.io/docs/list-of-plugins.html#uglifyjsplugin
-  // postCss: [] // Post-CSS options: https://github.com/postcss/postcss/blob/master/docs/plugins.md
+	
+	.options({
+	  processCssUrls: false, // Process/optimize relative stylesheet url()'s. Set to false, if you don't want them touched.
+	  // purifyCss: false, // Remove unused CSS selectors.
+	  // uglify: {}, // Uglify-specific options. https://webpack.github.io/docs/list-of-plugins.html#uglifyjsplugin
+	  // postCss: [] // Post-CSS options: https://github.com/postcss/postcss/blob/master/docs/plugins.md
 });
 
 	// .options({
@@ -45,7 +46,7 @@ mix.setPublicPath('src')
  //      }),
  //    ]
  //  });
-	
+ 
 // if (!mix.inProduction()){
 // 	mix.browserSync({
 // 		/*browser: 'Google Chrome',*/

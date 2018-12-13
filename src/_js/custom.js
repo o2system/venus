@@ -1,12 +1,9 @@
 import * as jQuery from 'jquery';
 import owlCarousel from 'owl.carousel';
 
-jQuery(document).ready(function(){
-	jQuery(function () {
-		jQuery('[data-toggle="popover"]').popover();
-	  	jQuery('[data-toggle="tooltip"]').tooltip();
-	})
-  	jQuery('.testimonial-slider').owlCarousel({
+export default(function(){
+	
+  	$('.testimonial-slider').owlCarousel({
         loop:true,
         margin:10,
         items: 1,
