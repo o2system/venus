@@ -1,4 +1,4 @@
-import * as jQuery from 'jquery';
+// import * as jQuery from 'jquery';
 import owlCarousel from 'owl.carousel';
 
 export default(function(){

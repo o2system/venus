@@ -3,7 +3,6 @@ Gemfile.lock
 .vscode
 demo
 *.map
-src/assets
 
 # Logs
 logs
