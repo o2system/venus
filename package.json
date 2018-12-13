@@ -25,13 +25,29 @@
     "url": "https://github.com/o2system/venus/issues"
   },
   "dependencies": {
-    "npm": "^6.4.1",
-    "o2system-espresso": "^1.0.0",
-    "popper.js": "^1.14.6",
+    "@fortawesome/fontawesome-free": "^5.6.0",
     "bootstrap": "^4.1.3",
-    "owl.carousel": "^2.3.4"
+    "jquery": "^3.3.1",
+    "o2system-espresso": "0.0.2",
+    "owl.carousel": "^2.3.4",
+    "popper.js": "^1.14.6"
   },
   "devDependencies": {
-    "pretty": "^1.0.0"
+
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.4.2",
+    "browser-sync": "^2.26.3",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "concurrently": "^4.1.0",
+    "cross-env": "^5.2.0",
+    "cssnano": "^4.1.7",
+    "eslint": "^5.10.0",
+    "fs-extra": "^7.0.1",
+    "jshint": "^2.9.7",
+    "postcss": "^7.0.6",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-unprefix": "^2.1.3",
+    "webpack-mix": "^2.0.2"
   }
 }

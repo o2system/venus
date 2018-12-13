@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import * as jQuery from 'jquery';
 import owlCarousel from 'owl.carousel';
 
@@ -7,6 +8,14 @@ jQuery(document).ready(function(){
 	  	jQuery('[data-toggle="tooltip"]').tooltip();
 	})
   	jQuery('.testimonial-slider').owlCarousel({
+=======
+// import * as $ from 'jquery';
+import owlCarousel from 'owl.carousel';
+
+export default(function(){
+	
+  	$('.testimonial-slider').owlCarousel({
+>>>>>>> turahe
         loop:true,
         margin:10,
         items: 1,
