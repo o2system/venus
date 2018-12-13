@@ -13,22 +13,23 @@ let mix = require('webpack-mix').mix
  .js('src/_js/venus.js', 'assets/js/')
  .sass('src/_scss/venus.scss', 'assets/css/')
 
-	// .copy('./demo/css/venus.css', './dist/venus.css')
-	// .copy('./demo/js/venus.js', './dist/venus.js')
+ .copy('./src/assets/css/venus.css', './dist/venus.css')
+ .copy('./src/assets/js/venus.js', './dist/venus.js')
 
-	.webpackConfig({
-		devtool: 'source-map',
-		externals: {
-			'jquery': 'JQuery'
-		}
-	})
-	.sourceMaps()
-	
-	.options({
-	  processCssUrls: false, // Process/optimize relative stylesheet url()'s. Set to false, if you don't want them touched.
-	  // purifyCss: false, // Remove unused CSS selectors.
-	  // uglify: {}, // Uglify-specific options. https://webpack.github.io/docs/list-of-plugins.html#uglifyjsplugin
-	  // postCss: [] // Post-CSS options: https://github.com/postcss/postcss/blob/master/docs/plugins.md
+ .copyDirectory('node_modules/@fortawesome/fontawesome-free/webfonts', './src/assets/webfonts')
+ // .copyDirectory()
+
+
+
+ 	.webpackConfig({
+ 		devtool: 'source-map',
+ 	})
+ 	.sourceMaps()
+ 	.options({
+  processCssUrls: false, // Process/optimize relative stylesheet url()'s. Set to false, if you don't want them touched.
+  // purifyCss: false, // Remove unused CSS selectors.
+  // uglify: {}, // Uglify-specific options. https://webpack.github.io/docs/list-of-plugins.html#uglifyjsplugin
+  // postCss: [] // Post-CSS options: https://github.com/postcss/postcss/blob/master/docs/plugins.md
 });
 
 	// .options({

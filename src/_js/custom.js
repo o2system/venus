@@ -1,7 +1,7 @@
-import * as jQuery from 'jquery';
+import * as $ from 'jquery';
 import owlCarousel from 'owl.carousel';
 
-export default(function(){
+$(document).ready(function(){
 	
   	$('.testimonial-slider').owlCarousel({
         loop:true,
@@ -17,7 +17,7 @@ export default(function(){
         navText: ['<i class="fas fa-long-arrow-alt-left"></i>','<i class="fas fa-long-arrow-alt-right"></i>'],
         navContainer: '.nav-container'
     });
-    jQuery('.screenshot-slider').owlCarousel({
+    $('.screenshot-slider').owlCarousel({
         loop:true,
         margin:10,
         items: 5,

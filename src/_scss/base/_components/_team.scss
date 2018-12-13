@@ -1,0 +1,126 @@
+.team{
+	figure{
+		position: relative;
+        text-align: center;
+        margin-bottom: 40px;
+        overflow: hidden;
+        cursor: pointer;
+        .img{
+        	max-height: 400px;
+        	overflow: hidden;
+        	display: flex;
+        	align-items: center;
+        	justify-content: center;
+            img{
+                max-width: 100%;
+            }
+        }
+
+        figcaption{
+        	position: absolute;
+            width: 100%;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 17px 0px;
+            transition: all 0.4s ease;
+        	a{
+        		color: $gray-900;
+        		font-weight: 600;
+        		margin-bottom: 5px;
+        	}
+
+        	h5{
+        		font-weight: 300;
+        		margin-bottom: 0;
+        		font-size: 14px;
+        		line-height: 24px;
+        	}
+        }
+
+        .overlay{
+        	position: absolute;
+        	width: 100%;
+        	height: 100%;
+        	top: 0;
+        	display: flex;
+        	justify-content: center;
+        	align-items: center;
+        	padding: 0 33px;
+        	background-image: linear-gradient(140deg, $primary 0%, darken($primary, 20%) 100%);
+            opacity: 0;
+            visibility: visible;
+            z-index: -1;
+            transition: all 0.4s ease;
+            transform: scale(0.9);
+
+         	figcaption{
+         		width: 100%;
+         		position: unset;
+         		background-color: transparent;
+
+         		ul{
+         			list-style: none;
+                    margin-bottom: 0px;
+                    padding-left: 0;
+                    li{
+                        display: inline-block;
+                        a{
+                        	font-weight: 400;
+                            font-size: 13px;
+                            color: #fff;
+                            margin: 0px 5px;
+                        }
+                    }
+                }
+
+                a{
+                	transform: translateY(12px);
+                	color: $white;
+                }
+
+                h5{
+                	transform: translateY(20px);
+                	color: $white;
+                }
+
+                .line{
+                	width: 100%;
+                    height: 1px;
+                    background: rgba(255, 255, 255, 0.2);
+                    display: block;
+                    margin: 15px 0px 20px;
+                    transform: scale(0);
+                    transition: all 0.6s linear;
+                }
+         	}
+        }
+
+        &:hover{
+        	figcaption{
+        		opacity: 0;
+                visibility: visible;
+                transform: translateY(100%);
+        	}
+
+        	.overlay{
+        		opacity: 1;
+                visibility: visible;
+                z-index: 0;
+                transform: scale(1);
+
+                figcaption{
+                	opacity: 1;
+                	transform: unset;
+
+                	a, h5{
+                		transform: translateY(0);
+                	}
+
+                	.line{
+                		transform: scale(1);
+                	}
+                }
+        	}
+        }
+	}
+}
