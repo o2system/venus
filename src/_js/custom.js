@@ -1,12 +1,12 @@
-import * as $ from 'jquery';
+import * as jQuery from 'jquery';
 import owlCarousel from 'owl.carousel';
 
-$(document).ready(function(){
-	$(function () {
-		$('[data-toggle="popover"]').popover();
-	  	$('[data-toggle="tooltip"]').tooltip();
+jQuery(document).ready(function(){
+	jQuery(function () {
+		jQuery('[data-toggle="popover"]').popover();
+	  	jQuery('[data-toggle="tooltip"]').tooltip();
 	})
-  	$('.testimonial-slider').owlCarousel({
+  	jQuery('.testimonial-slider').owlCarousel({
         loop:true,
         margin:10,
         items: 1,
@@ -20,7 +20,7 @@ $(document).ready(function(){
         navText: ['<i class="fas fa-long-arrow-alt-left"></i>','<i class="fas fa-long-arrow-alt-right"></i>'],
         navContainer: '.nav-container'
     });
-    $('.screenshot-slider').owlCarousel({
+    jQuery('.screenshot-slider').owlCarousel({
         loop:true,
         margin:10,
         items: 5,
