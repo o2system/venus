@@ -42,5 +42,15 @@ $(document).ready(function(){
                 items:5,   
             },
         },
-    })
+    });
+
+    $('.about-slider').owlCarousel({
+        loop: true,
+        margin: 0,
+        items: 1,
+        nav: false,
+        autoplay: false,
+        smartSpeed: 2000,
+        responsiveClass: true,
+    });
 });

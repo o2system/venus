@@ -1,4 +1,4 @@
-.feature{
+.features{
 	.img{
 		margin-bottom: 2rem;
 		img{
@@ -14,12 +14,28 @@
 		}
 	}
 }
-.feature-1{
+.prototype-tools{
+    background-color: #fbfbfd;
+    padding: 7px 16px;
+    margin: 35px 0px 45px;
+    box-shadow: 0px 2px 3px 0px rgba(12,0,46,0.04);
+    display: inline-block;
+
+    a{
+        display: inline-block;
+        padding: 10px 12px;
+
+        img{
+            max-width: 100%;
+        }
+    }
+}
+.features-1{
 	text-align: center;
 	margin-bottom: 2rem;
 }
 
-.feature-2{
+.features-2{
 	.icon{
 		width: 60px;
 		height: 60px;
@@ -361,6 +377,127 @@
                     right: auto;
                     left: 0;
                 }
+            }
+        }
+    }
+}
+
+.features-8{
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    .shape{
+        position: absolute;
+        opacity: 1;
+        top: 58%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        >div{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 18rem;
+            height: 18rem;
+            border-radius: 100%;
+            background-image: linear-gradient(-180deg, rgba(227, 221, 246, 0.1) 0%, rgba(227, 221, 246, 0.2) 65%, rgba(227, 221, 246, 0.1) 100%);
+            z-index: -1;
+        }
+        .shape-1{
+            transform: translate(-50%, -50%) scale(0.67);
+        }
+        .shape-2{
+            transform: translate(-50%, -50%) scale(1.05);
+        }
+        .shape-3{
+            transform: translate(-50%, -50%) scale(1.63);
+        }
+        .shape-4{
+            transform: translate(-50%, -50%) scale(2.1);
+        }
+        .shape-x{
+            will-change: transform;
+            animation: pulsate 3s infinite;
+        }
+    }
+    .item{
+        margin-bottom: 90px;
+        padding-right: 70px;
+        .icon{
+            box-sizing: content-box;
+            width: 55px;
+            height: 60px;
+            position: relative;
+            margin: 0px 0px 25px;
+            font-size: 24px;
+            border-radius: 50% / 14%;
+            color: white;
+            text-align: center;
+            line-height: 64px;
+            text-overflow: clip;
+            z-index: 1;
+            &.one, &.bg-primary{
+                background: $primary;
+                &::before{
+                    background: $primary;
+                }
+            }
+            &.two, &.bg-success{
+                background: $success;
+                &::before{
+                    background: $success;
+                }
+            }
+            &.three, &.bg-warning{
+                background: $warning;
+                &::before{
+                    background: $warning;
+                }
+            }
+            &.four, &.bg-info{
+                background: $info;
+                &::before{
+                    background: $info;
+                }
+            }
+            &.five, &.bg-secondary{
+                background: $secondary;
+                &::before{
+                    background: $secondary;
+                }
+            }
+            &.six, &.bg-danger{
+                background: $danger;
+                &::before{
+                    background: $danger;
+                }
+            }
+            &:before{
+                box-sizing: content-box;
+                position: absolute;
+                content: "";
+                top: 10%;
+                right: -5.5%;
+                bottom: 10%;
+                left: -5%;
+                border: none;
+                border-radius: 7% / 50%;
+                text-overflow: clip;
+                text-shadow: none;
+                z-index: -1;
+            }
+        }
+        .caption{
+            h5{
+                font-size: 17px;
+                line-height: 22px;
+                margin-bottom: 15px;
+                color: $gray-900;
+                font-weight: 600;
+            }
+            p{
+                font-size: 15px;
+                font-weight: 300;
             }
         }
     }
