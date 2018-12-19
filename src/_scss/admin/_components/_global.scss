@@ -1,0 +1,13 @@
+.main{
+	margin-left: 240px;
+    margin-top: 80px;
+    margin-bottom: 60px;
+    transition: all 0.3s;
+}
+
+&.open-sidebar-left{
+	.main{
+		margin-left: 60px;
+		transition: all 0.3s;
+	}
+}

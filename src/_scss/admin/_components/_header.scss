@@ -1,0 +1,126 @@
+.header{
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 999;
+	display: flex;
+	flex-grow: 1;
+
+	.header-left{
+		background-color: $primary;
+		text-align: center;
+		height: 60px;
+		position: relative;
+		width: 240px;
+		z-index: 1;
+		transition: all 0.3s;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		.logo-large{ 
+			padding: 10px;
+			img{
+				max-height: 40px;
+				width: auto;
+			}
+		}
+
+		.logo-mini{
+			display: none;
+
+			img{
+				max-width: 30px;
+				height: auto;
+			}
+		}
+	}
+
+	.header-right{
+		flex: 1 1 auto;
+		.navbar{
+			background-color: $white;
+			border-radius: 0;
+			margin-bottom: 0;
+			box-shadow: 0 0 1.25rem rgba(108,118,134,.1);
+			min-height: 60px;
+			position: relative;
+
+			.navbar-collapse{
+				display: -ms-flexbox !important;
+			    display: flex !important;
+			    -ms-flex-preferred-size: auto;
+			    flex-basis: auto;
+			}
+
+			.navbar-nav{
+				align-items: center;
+				.nav-item{
+					.nav-link{
+						display: flex;
+						align-items: center;
+
+						.avatar{
+							width: 30px;
+							height: 30px;
+							overflow: hidden;
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							border-radius: 50%;
+							border: 1px solid #ddd; 
+
+							img{
+								max-width: 100%;
+								height: auto;
+							}
+						}
+
+						span{
+							margin-left: 10px;
+						}
+					}
+				}
+				.dropdown-menu{
+					position: absolute;
+					padding: 4px 0;
+					box-shadow: 0 0 1.25rem rgba(108,118,134,.1);
+					border-color: #eff3f6;
+					font-size: 14px;
+
+					.dropdown-item{
+						color: rgba(0, 0, 0, 0.5);
+						padding: 6px 16px;
+						i {
+						    font-size: 16px;
+						    vertical-align: middle;
+						    margin-right: 7px;
+						}
+
+						&:active, &:hover{
+							color: $gray-900;
+							background-color: $gray-300;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+&.open-sidebar-left{
+	.header{
+		.header-left{
+			width: 60px;
+
+			.logo-large{
+				display: none;
+			}
+
+			.logo-mini{
+				display: block;
+			}
+		}
+	}
+}

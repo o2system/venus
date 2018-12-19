@@ -1,5 +1,6 @@
 body {
   	color: $body-color;
+    overflow-x: hidden;
 }
 .title{
 	margin-bottom: 4rem;
@@ -15,6 +16,10 @@ body {
 	h3, h4, h5, h6{
 		color: $body-color;
 	}
+}
+
+a{
+    outline: none !important;
 }
 
 section{
