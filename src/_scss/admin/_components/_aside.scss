@@ -130,7 +130,7 @@
 					&:hover {
 						> a {
 					    	position: relative;
-						    width: 260px;
+						    width: 250px;
 						    background-color: darken($primary, 10%);
 
 						    span{
@@ -147,35 +147,37 @@
 						    width: 190px;
 						    height: auto !important;
 						    background-color: $primary;
-
-						    > li{
-						    	> a{
-						    		padding-left: 8px 10px !important;
-						    	}
-
-						    	> .submenu{
-						    		position: relative;
-									> li{
-										> a{
-											padding-left: 8px 20px !important;
-										}
-									}
-						    	}
-						    }
+						    overflow: hidden;
 
 						    li{
 						    	a{
-						    		padding: 8px 10px !important;
+						    		padding: 8px 20px !important;
 
 						    		&.has-arrow{
 										&:after{
 											display: none;
 										}
 								    }
-								    
+
 						    		&:hover{
 						    			background-color: darken($primary, 10%);
 						    		}
+						    	}
+						    }
+
+						    > li{
+						    	> a{
+						    		padding-left: 8px 20px !important;
+						    	}
+
+						    	> .submenu{
+						    		position: relative;
+						    		left: 20px;
+									> li{
+										> a{
+											padding-left: 8px 20px !important;
+										}
+									}
 						    	}
 						    }
 						}
