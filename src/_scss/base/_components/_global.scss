@@ -78,3 +78,9 @@ section{
     }
 
 }
+
+.remove-caret{
+    &:after{
+        display: none;
+    }
+}

@@ -2,10 +2,19 @@
 	background-color: $primary;
 	width: 240px;
 	position: fixed;
-	z-index: 999;
+	z-index: 99;
 	top: 60px;
 	bottom: 0;
+	left: 0;
 	transition: all 0.3s;
+
+	@include device(tablet) {
+		left: -240px;
+	}
+
+	@include device(mobile) {
+		left: -240px;
+	}
 
 	.sidebar-menu{
 		> ul{
@@ -30,6 +39,7 @@
 					display: flex;
 					align-items: center;
 					justify-content: space-between;
+					white-space: nowrap;
 					
 					i {
 					    font-size: 1rem;
@@ -46,6 +56,13 @@
 						text-align: center;
 						white-space: nowrap;
 						margin-right: 10px;
+						opacity: 1;
+						transition: all 0.3s;
+					}
+
+					.hide{
+						opacity: 1;
+						transition: all 0.3s;
 					}
 				}
 
@@ -81,12 +98,15 @@
 	}
 }
 
-&.open-sidebar-left{
+&.mini-sidebar-left{
 	.sidebar-left{
 		width: 60px;
 		transition: all 0.3s;
+		position: absolute;
+		overflow: visible !important;
 		.sidebar-menu{
 			> ul{
+				background-color: $primary;
 				> li {
 					&.menu-title{
 						display: none;
@@ -109,11 +129,15 @@
 
 						span{
 							&.hide{
+								opacity: 0;
 								display: none;
 								padding-left: 10px;
+								transition: all 0.3s;
 							}
 
 							&.badge{
+								transition: all 0.3s;
+								opacity: 0;
 								display: none;
 							}
 						}
@@ -135,7 +159,13 @@
 
 						    span{
 						    	&.hide{
+						    		opacity: 1;
 						    		display: inline;
+						    	}
+
+						    	&.badge{
+						    		display: inline;
+						    		opacity: 1;
 						    	}
 						    }
 						}
@@ -185,5 +215,11 @@
 				}
 			}
 		}
+	}
+}
+
+&.open-sidebar-left{
+	.sidebar-left{
+		left: 0;
 	}
 }

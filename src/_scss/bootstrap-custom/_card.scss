@@ -12,6 +12,7 @@
   background-clip: border-box;
   border: $card-border-width solid $card-border-color;
   @include border-radius($card-border-radius);
+  box-shadow: 0 0 1.25rem rgba(108,118,134,.1);
 
   > hr {
     margin-right: 0;
@@ -185,7 +186,7 @@
 .card-header {
   padding: $card-spacer-y $card-spacer-x;
   margin-bottom: 0; // Removes the default margin-bottom of <hN>
-  background-color: $card-cap-bg;
+  background-color: $white;
   border-bottom: $card-border-width solid $card-border-color;
 
   &:first-child {

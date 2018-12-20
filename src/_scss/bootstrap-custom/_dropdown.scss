@@ -33,6 +33,10 @@
   @include box-shadow($dropdown-box-shadow);
 }
 
+.dropdown-menu-lg{
+  width: 270px;
+}
+
 .dropdown-menu-right {
   right: 0;
   left: auto;
@@ -119,6 +123,8 @@
   white-space: nowrap; // prevent links from randomly breaking onto new lines
   background-color: transparent; // For `<button>`s
   border: 0; // For `<button>`s
+  position: relative;
+  z-index: 2;
 
   @include hover-focus {
     color: $dropdown-link-hover-color;
