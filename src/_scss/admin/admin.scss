@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700');
 .venus-admin{
 	background-color: #f5f5f5;
+	font-family: 'Nunito', sans-serif;
+	
 	@import "~metismenu/dist/metisMenu.css";
 	@import "_components/header.scss";
 	@import "_components/aside.scss";
 	@import "_components/global.scss"; 
+	@import "_components/auth.scss"; 
+	@import "_components/card.scss"; 
 }

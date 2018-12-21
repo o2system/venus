@@ -7,6 +7,7 @@ try {
     require('./custom.js');
     require('./custom-bootstrap.js');
     require('./admin.js');
+    require('./form.js');
 } catch (e) {
     console.log(e);
 }
