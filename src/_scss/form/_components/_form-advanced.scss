@@ -114,3 +114,14 @@
         border-radius: 3px;
     }
 }
+
+/* Bootstrap Filestyle */
+.input-group-btn:not(:first-child) > .btn{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+/* Selectize */
+.form-control.selectize-control .selectize-input.focus {
+  box-shadow: none;
+}

@@ -1,5 +1,7 @@
 import metisMenu from 'metismenu';
 import niceScroll from 'nicescroll';
+import Swal from 'sweetalert2';
+import toastr from 'toastr';
 
 $(document).ready(function(){
 	var sidebarLeftScroll = $('.sidebar-left').niceScroll({

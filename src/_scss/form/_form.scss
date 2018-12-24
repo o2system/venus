@@ -2,4 +2,13 @@
 @import "~bootstrap-tagsinput/dist/bootstrap-tagsinput.css";
 @import "~bootstrap-select/dist/css/bootstrap-select.min.css";
 @import "~switchery/switchery.css";
+@import "~bootstrap-datepicker/dist/css/bootstrap-datepicker.css";
+@import "~bootstrap-timepicker/css/bootstrap-timepicker.min.css";
+@import "~bootstrap-daterangepicker/daterangepicker.css";
+@import "~selectize-bootstrap4-theme/dist/css/selectize.bootstrap4.css";
+@import "_components/switchery.scss";
 @import "_components/form-advanced.scss";
+@import "_components/form-validation.scss";
+@import "_components/form-pickers.scss";
+@import "_components/form-wizard.scss";
+@import "_components/form-upload.scss";

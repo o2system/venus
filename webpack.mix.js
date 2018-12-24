@@ -17,6 +17,9 @@ let mix = require('webpack-mix').mix
  .copy('./src/assets/js/venus.js', './dist/venus.js')
 
  .copyDirectory('node_modules/@fortawesome/fontawesome-free/webfonts', './src/assets/webfonts')
+ .copyDirectory('node_modules/tinymce/plugins', './src/assets/js/plugins')
+ .copyDirectory('node_modules/tinymce/skins', './src/assets/js/skins')
+ .copyDirectory('node_modules/tinymce/themes', './src/assets/js/themes')
  // .copyDirectory()
 
 

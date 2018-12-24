@@ -4,6 +4,8 @@
 	font-family: 'Nunito', sans-serif;
 	
 	@import "~metismenu/dist/metisMenu.css";
+	@import "~sweetalert2/dist/sweetalert2.min.css";
+	@import "~toastr/toastr.scss";
 	@import "_components/header.scss";
 	@import "_components/aside.scss";
 	@import "_components/global.scss"; 

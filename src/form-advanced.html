@@ -212,47 +212,350 @@ layout: admin
 		</div>
 	</div>
 
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h4>Selectize.js</h4>
+                    <p class="text-muted">
+                        Selectize is the hybrid of a textbox and <code>select</code> box. It's jQuery-based and it's useful for tagging, contact lists, country selectors, and so on.
+                    </p>
+                    <form>
+                        <div class="form-group">
+                            <p class="text-muted font-weight-bold">Tags</p>
+                            <input type="text" class="form-control selectize-tags" name="">
+                        </div>
+                        <div class="form-group">
+                            <p class="text-muted font-weight-bold">Single Item</p>
+                            <select class="form-control custom-select selectize-single" name="" placeholder="Select or Add">
+                                <option value="" selected>Test</option>
+                                <option>First</option>
+                                <option>Second</option>
+                                <option>Third</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <p class="text-muted font-weight-bold">Option Groups</p>
+                            <select class="form-control custom-select selectize-opt" name="" placeholder="Select or Add">
+                                <optgroup label="Swedish Cars">
+                                    <option value="volvo">Volvo</option>
+                                    <option value="saab">Saab</option>
+                                </optgroup>
+                                <optgroup label="German Cars">
+                                    <option value="mercedes">Mercedes</option>
+                                    <option value="audi">Audi</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h4>Switchery</h4>
+
+                    <p class="font-weight-bold text-muted">Basic</p>
+                    <p class="text-muted">
+                        Add an attribute <code>
+                        data-plugin="switchery" data-color="@colors"</code>
+                        to your input element and it will be converted into switch.
+                    </p>
+
+                    <div class="switchery-demo">
+                        <input type="checkbox" checked data-plugin="switchery" data-color="#039cfd"/>
+                        <input type="checkbox" checked data-plugin="switchery" data-color="#f1b53d"/>
+                        <input type="checkbox" checked data-plugin="switchery" data-color="#1bb99a"/>
+                        <input type="checkbox" checked data-plugin="switchery" data-color="#ff5d48"/>
+                        <input type="checkbox" checked data-plugin="switchery" data-color="#3db9dc"/>
+                        <input type="checkbox" checked data-plugin="switchery" data-color="#2b3d51"/>
+                        <input type="checkbox" checked data-plugin="switchery" data-color="#9261c6"/>
+                        <input type="checkbox" checked data-plugin="switchery" data-color="#ff7aa3"/>
+                        <input type="checkbox" checked data-plugin="switchery" data-color="#98a6ad"/>
+                    </div>
+
+
+                    <p class="mt-3 font-weight-bold text-muted">Sizes & Secondary color</p>
+                    <p class="text-muted">
+                        Add an attribute <code>
+                        data-size="small",data-size="large"</code>
+                        to your input element and it will be converted into switch.
+                        Add an attribute <code>
+                        data-color="@color" data-secondary-color="@color"</code>
+                        to your input element and it will be converted into switch.
+                    </p>
+
+                    <div class="switchery-demo">
+                        <input type="checkbox" checked data-plugin="switchery" data-color="#64b0f2" data-size="small"/>
+                        <input type="checkbox" checked data-plugin="switchery" data-color="#ff7aa3"/>
+                        <input type="checkbox" checked data-plugin="switchery" data-color="#2b3d51" data-size="large"/>
+                        <input type="checkbox" data-plugin="switchery" data-color="#1bb99a" data-secondary-color="#ff5d48" />
+                        <input type="checkbox" data-plugin="switchery" data-color="#9261c6"  data-secondary-color="#ff7aa3" checked />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 	<div class="card">
 		<div class="card-body">
-            <h4>Switchery</h4>
+            <h4>Bootstrap-select</h4>
 
-            <p class="font-weight-bold text-muted">Basic</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="demo-box">
+                        <p class="mb-2 mt-4">
+                            Create your
+                            <code>
+                                &lt;select&gt;
+                            </code>
+                            with the
+                            <code>
+                                .selectpicker
+                            </code>
+                            class.
+                        </p>
+                        <select class="selectpicker" data-style="btn-custom btn-block">
+                            <option>Mustard</option>
+                            <option>Ketchup</option>
+                            <option>Relish</option>
+                        </select>
+
+                        <p class="mb-2 mt-4">
+                            It also works with option groups:
+                        </p>
+                        <select class="selectpicker" data-style="btn-light">
+                            <optgroup label="Picnic">
+                                <option>Mustard</option>
+                                <option>Ketchup</option>
+                                <option>Relish</option>
+                            </optgroup>
+                            <optgroup label="Camping">
+                                <option>Tent</option>
+                                <option>Flashlight</option>
+                                <option>Toilet Paper</option>
+                            </optgroup>
+                        </select>
+
+                        <p class="mb-2 mt-4">
+                            You can also show the tick icon on single <code>select</code> with the <code>show-tick</code> class:
+                        </p>
+
+                        <select class="selectpicker show-tick" data-style="btn-success">
+                            <option>Mustard</option>
+                            <option>Ketchup</option>
+                            <option>Relish</option>
+                        </select>
+
+                        <p class="mb-2 mt-4">
+                            And with multiple selects:
+                        </p>
+                        <select class="selectpicker" multiple data-style="btn-light">
+                            <option>Mustard</option>
+                            <option>Ketchup</option>
+                            <option>Relish</option>
+                        </select>
+
+                        <p class="mb-2 mt-4">
+                            You can limit the number of elements you are allowed to select via the
+                            <code>
+                                data-max-option
+                            </code>
+                            attribute. It also works for option groups.
+                        </p>
+
+                        <select class="selectpicker m-b-0" multiple data-max-options="2" data-style="btn-pink">
+                            <option>Mustard</option>
+                            <option>Ketchup</option>
+                            <option>Relish</option>
+                        </select>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="demo-box">
+                        <p class="mb-2 mt-4">
+                            You can limit the number of elements you are allowed to select via the
+                            <code>
+                                data-max-option
+                            </code>
+                            attribute. It also works for option groups.
+                        </p>
+
+                        <select class="selectpicker" data-style="btn-light btn-rounded">
+                            <option>Mustard</option>
+                            <option>Ketchup</option>
+                            <option>Relish</option>
+                        </select>
+
+                        <br />
+                        <br />
+                        <select class="selectpicker" data-style="btn-primary btn-bordered">
+                            <option>Mustard</option>
+                            <option>Ketchup</option>
+                            <option>Relish</option>
+                        </select>
+
+                        <br />
+                        <br />
+                        <select class="selectpicker" data-style="btn-info">
+                            <option>Mustard</option>
+                            <option>Ketchup</option>
+                            <option>Relish</option>
+                        </select>
+
+                        <br />
+                        <br />
+                        <select class="selectpicker" data-style="btn-warning">
+                            <option>Mustard</option>
+                            <option>Ketchup</option>
+                            <option>Relish</option>
+                        </select>
+
+                        <br />
+                        <br />
+                        <select class="selectpicker" data-style="btn-danger btn-bordered">
+                            <option>Mustard</option>
+                            <option>Ketchup</option>
+                            <option>Relish</option>
+                        </select>
+
+                        <br />
+                        <br />
+                        <select class="selectpicker" data-style="btn-purple">
+                            <option>Mustard</option>
+                            <option>Ketchup</option>
+                            <option>Relish</option>
+                        </select>
+
+                        <p class="mb-2 mt-4">
+                            Add an icon to an option or optgroup with the <code>data-icon</code> attribute:
+                        </p>
+                        <select class="selectpicker m-b-0" data-style="btn-light">
+                            <option data-icon="mdi mdi-account-circle">Mustard</option>
+                            <option data-icon="mdi mdi-airplane">Ketchup</option>
+                            <option data-icon="mdi mdi-airplay">Relish</option>
+                            <option data-icon="mdi mdi-adjust">Mayonnaise</option>
+                            <option data-icon="mdi mdi-apple">Barbecue Sauce</option>
+                        </select>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="demo-box">
+                        <p class="mb-2 mt-4">
+                            You can add a search input by passing <code>data-live-search="true"</code> attribute:
+                        </p>
+
+                        <select class="selectpicker" data-live-search="true"  data-style="btn-custom">
+                            <option>Hot Dog, Fries and a Soda</option>
+                            <option>Burger, Shake and a Smile</option>
+                            <option>Sugar, Spice and all things nice</option>
+                        </select>
+
+                        <p class="mb-2 mt-4">
+                            You can also use the <code>
+                            title</code> attribute as an alternative to display when the option is
+                            selected:
+                        </p>
+
+                        <select class="selectpicker" data-live-search="true" data-style="btn-light">
+                            <option title="Combo 1">Hot Dog, Fries and a Soda</option>
+                            <option title="Combo 2">Burger, Shake and a Smile</option>
+                            <option title="Combo 3">Sugar, Spice and all things nice</option>
+                        </select>
+
+                        <p class="mb-2 mt-4">
+                            Using the <code>data-selected-text-format</code> attribute on a <code>multiple select</code>
+                            you can specify how the selection is displayed.
+                        </p>
+
+                        <select class="selectpicker" multiple data-selected-text-format="count" data-style="btn-light">
+                            <option>Mustard</option>
+                            <option>Ketchup</option>
+                            <option>Relish</option>
+                        </select>
+
+                        <br/>
+                        <br/>
+                        <select class="selectpicker" multiple data-selected-text-format="count > 3" data-style="btn-light">
+                            <option>Mustard</option>
+                            <option>Ketchup</option>
+                            <option>Relish</option>
+                            <option>Onions</option>
+                        </select>
+
+                        <p class="mb-2 mt-4">
+                            Add the <code>disabled</code> attribute to the select to apply the <code>disabled</code> class.
+                        </p>
+                        <select class="selectpicker m-b-0" data-style="btn-info" disabled>
+                            <option>Mustard</option>
+                            <option>Ketchup</option>
+                            <option>Relish</option>
+                        </select>
+
+                    </div>
+                </div>
+            </div> <!-- end row -->
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="card-body">
+            <h4>Bootstrap FileStyle</h4>
             <p class="text-muted">
-                Add an attribute <code>
-                data-plugin="switchery" data-color="@colors"</code>
-                to your input element and it will be converted into switch.
+                Customization of input html file for Bootstrap 4
             </p>
 
-            <div class="switchery-demo">
-                <input type="checkbox" checked data-plugin="switchery" data-color="#039cfd"/>
-                <input type="checkbox" checked data-plugin="switchery" data-color="#f1b53d"/>
-                <input type="checkbox" checked data-plugin="switchery" data-color="#1bb99a"/>
-                <input type="checkbox" checked data-plugin="switchery" data-color="#ff5d48"/>
-                <input type="checkbox" checked data-plugin="switchery" data-color="#3db9dc"/>
-                <input type="checkbox" checked data-plugin="switchery" data-color="#2b3d51"/>
-                <input type="checkbox" checked data-plugin="switchery" data-color="#9261c6"/>
-                <input type="checkbox" checked data-plugin="switchery" data-color="#ff7aa3"/>
-                <input type="checkbox" checked data-plugin="switchery" data-color="#98a6ad"/>
-            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="demo-box">
+                        <form>
+                            <div class="form-group">
+                                <p class="mb-2 mt-4 font-weight-bold text-muted">Default file input</p>
+                                <input type="file" class="filestyle" data-btnClass="btn-primary">
+                            </div>
+                            <div class="form-group">
+                                <p class="mb-2 mt-4 font-weight-bold text-muted">File style without input</p>
+                                <input type="file" class="filestyle" data-input="false" data-btnClass="btn-primary">
+                            </div>
+                            <div class="form-group">
+                                <p class="mb-2 mt-4 font-weight-bold text-muted">File style with custom text</p>
+                                <input type="file" class="filestyle" data-buttontext="Select file" data-btnClass="btn-primary">
+                            </div>
+                            <div class="form-group m-b-0">
+                                <p class="mb-2 mt-4 font-weight-bold text-muted">File style with button style</p>
+                                <input type="file" class="filestyle" data-btnClass="btn-primary">
+                            </div>
 
+                        </form>
+                    </div>
+                </div>
 
-            <p class="mt-3 font-weight-bold text-muted">Sizes & Secondary color</p>
-            <p class="text-muted">
-                Add an attribute <code>
-                data-size="small",data-size="large"</code>
-                to your input element and it will be converted into switch.
-                Add an attribute <code>
-                data-color="@color" data-secondary-color="@color"</code>
-                to your input element and it will be converted into switch.
-            </p>
+                <div class="col-md-6">
+                    <div class="demo-box">
+                        <form>
+                            <div class="form-group">
+                                <p class="mb-2 mt-4 font-weight-bold">Disable file style</p>
+                                <input type="file" class="filestyle" data-disabled="true" data-btnClass="btn-primary">
+                            </div>
+                            <div class="form-group">
+                                <p class="mb-2 mt-4 font-weight-bold">File style before button</p>
+                                <input type="file" class="filestyle" data-buttonbefore="true" data-btnClass="btn-primary">
+                            </div>
 
-            <div class="switchery-demo">
-                <input type="checkbox" checked data-plugin="switchery" data-color="#64b0f2" data-size="small"/>
-                <input type="checkbox" checked data-plugin="switchery" data-color="#ff7aa3"/>
-                <input type="checkbox" checked data-plugin="switchery" data-color="#2b3d51" data-size="large"/>
-                <input type="checkbox" data-plugin="switchery" data-color="#1bb99a" data-secondary-color="#ff5d48" />
-                <input type="checkbox" data-plugin="switchery" data-color="#9261c6"  data-secondary-color="#ff7aa3" checked />
-            </div>
+                            <div class="form-group m-b-0">
+                                <p class="mb-2 mt-4 font-weight-bold">File style placeholder</p>
+                                <input type="file" class="filestyle" data-placeholder="No file" data-btnClass="btn-primary">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div> <!-- end row -->
 		</div>
 	</div>
 </div>
