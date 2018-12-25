@@ -4,7 +4,6 @@ Gemfile.lock
 demo
 *.map
 dist/
-src/assets
 # Logs
 logs
 *.log
