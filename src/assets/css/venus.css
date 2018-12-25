@@ -22523,6 +22523,39 @@ footer .copyright p {
   }
 }
 
+.dropzone-previews {
+  display: none;
+}
+
+.dz-template {
+  margin: 0 15px;
+  width: calc(100% / 3 - 30px);
+  display: inline-block;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .dz-template {
+    width: calc(100% / 2 - 30px);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .dz-template {
+    width: 100%;
+    margin: 0;
+    padding: 0 15px;
+  }
+}
+
+.dz-message {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.dz-started .dz-message {
+  display: none;
+}
+
 .media-list .media-list-item {
   position: relative;
   cursor: pointer;
@@ -22531,7 +22564,8 @@ footer .copyright p {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  margin-bottom: 1.5rem;
+  margin-top: 15px;
+  margin-bottom: 15px;
   font-size: 54px;
 }
 

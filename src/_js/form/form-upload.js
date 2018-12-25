@@ -17,8 +17,7 @@ if(typeof Dropzone != 'undefined')
         autoProcessQueue: true,
         thumbnailWidth: null,
         thumbnailHeight: null,
-        previewTemplate: previewTemplate,
-        previewsContainer: "#dropzone-previews", // Define the container to display the previews
+        previewTemplate: previewTemplate, // Define the container to display the previews
         //clickable: ".fileinput-button", // Define the element that should be used as click trigger to select files.
     });
     

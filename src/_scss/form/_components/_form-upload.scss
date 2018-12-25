@@ -1,3 +1,31 @@
+.dropzone-previews{
+	display: none;
+}
+.dz-template{
+	margin: 0 15px;
+	width: calc(100% / 3 - 30px);
+	display: inline-block;
+
+	@include device(tablet) {
+		width: calc(100% / 2 - 30px);
+	}
+	@include device(mobile) {
+		width: 100%;
+		margin: 0;
+		padding: 0 15px;
+	}
+}
+
+.dz-message{
+	text-align: center;
+	padding: 3rem 0;
+}
+
+.dz-started{
+	.dz-message{
+		display: none;
+	}
+}
 .media-list{
 	.media-list-item{
 		position: relative;
@@ -7,7 +35,8 @@
 		-moz-user-select: none;
 		-ms-user-select: none;
 		user-select: none;
-		margin-bottom: 1.5rem;
+		margin-top: 15px;
+		margin-bottom: 15px;
 		font-size: 54px;
 
 		.media-list-action{
