@@ -1,6 +1,6 @@
 {
   "name": "o2system-venus",
-  "version": "1.0.0",
+  "version": "1.5.0",
   "description": "O2System User Interface Framework",
   "homepage": "https://venus.o2system.id",
   "main": "./dist/venus.js",
