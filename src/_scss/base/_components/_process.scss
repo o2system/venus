@@ -1,0 +1,223 @@
+.dot{
+    width:20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(255, 161, 39, 0.161);
+    display: block;
+    position: absolute;
+    left: -9px;
+    top: 15px;
+    .dot1{
+        position: absolute;
+        left: 50%;
+        margin-top: -4px;
+        margin-left: -4px;
+        top: 50%;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #feb85d;
+    }
+    .dot2{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: rgba(254, 184, 93, 0.8);
+        animation: pulsate 3s infinite;
+        animation-delay: 1.5s;
+        transform: translate(-50%, -50%);
+        will-change: transform;
+    }
+    &.middle-dot{
+        left: 54.8%;
+        transform: translateX(-50%);
+        bottom: 0;
+        top: auto;
+    }
+}
+.process{
+    padding-bottom: 150px;
+    padding-top: 160px;
+    background: #fbfbfd;
+
+    .process-list{
+        position: relative;
+        padding-bottom: 70px;
+        .dot-img{
+            position: absolute;
+            left: 0;
+            top: 28px;
+
+            @include device(tablet) {
+                display: none;
+            }
+
+            @include device(mobile) {
+                display: none;
+            }
+        }
+        .item{
+            margin-top: 130px;
+            .img{
+                @include device(tablet) {
+                    text-align: left !important;
+                }
+
+                @include device(mobile) {
+                    text-align: left !important;
+                }
+                img{
+                    max-width: 100%;
+                }
+            }
+            .content{
+                position: relative;
+                padding-right: 70px;
+                padding-left: 70px;
+                @include device(tablet) {
+                    padding: 0;
+                }
+
+                @include device(mobile) {
+                    padding: 0;
+                }
+                >.dot{
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    background-color: rgba(255, 161, 39, 0.161);
+                    display: block;
+                    position: absolute;
+                    left: -9px;
+                    top: 15px;
+                    @include device(tablet) {
+                        display: none;
+                    }
+
+                    @include device(mobile) {
+                        display: none;
+                    }
+                    .dot1{
+                        position: absolute;
+                        left: 50%;
+                        margin-top: -4px;
+                        margin-left: -4px;
+                        top: 50%;
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 50%;
+                        background: #feb85d;
+                    }
+                    .dot2{
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 50%;
+                        background: rgba(254, 184, 93, 0.8);
+                        animation: pulsate 3s infinite;
+                        animation-delay: 1.5s;
+                        transform: translate(-50%, -50%);
+                        will-change: transform;
+                    }
+                }
+                h3{
+                    font-size: 26px;
+                    line-height: 36px;
+                    font-weight: 500;
+                    color: $gray-900;
+                    margin: 32px 0px 25px;
+                }
+                p{
+                    font-size: 15px;
+                }
+                .icon{
+                    width: 46px;
+                    height: 46px;
+                    line-height: 46px;
+                    border-radius: 50%;
+                    background-image: linear-gradient(40deg, $primary 0%, lighten($primary, 20%) 100%);
+                    box-shadow: 0px 10px 20px 0px rgba(94, 44, 237, 0.2);
+                    font-size: 20px;
+                    color: $white;
+                    display: inline-block;
+                    text-align: center;
+                    margin-top: 30px;
+                }
+            }
+            &.two{
+                .content{
+                    position: relative;
+                    padding-left: 100px;
+                    @include device(tablet) {
+                        padding: 0;
+                    }
+
+                    @include device(mobile) {
+                        padding: 0;
+                    }
+                    >.dot{
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        background-color: rgba(255, 161, 39, 0.161);
+                        display: block;
+                        position: absolute;
+                        left: 60px;
+                        top: 15px;
+                        @include device(tablet) {
+                            display: none;
+                        }
+
+                        @include device(mobile) {
+                            display: none;
+                        }
+                        .dot1{
+                            position: absolute;
+                            left: 50%;
+                            margin-top: -4px;
+                            margin-left: -4px;
+                            top: 50%;
+                            width: 8px;
+                            height: 8px;
+                            border-radius: 50%;
+                            background: #feb85d;
+                        }
+                        .dot2{
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            width: 8px;
+                            height: 8px;
+                            border-radius: 50%;
+                            background: rgba(254, 184, 93, 0.8);
+                            animation: pulsate 3s infinite;
+                            animation-delay: 1.5s;
+                            transform: translate(-50%, -50%);
+                            will-change: transform;
+                        }
+                    }
+                }
+            }
+        }
+        .dot{
+            @include device(tablet) {
+                display: none;
+            }
+
+            @include device(mobile) {
+                display: none;
+            }
+            &.middle{
+                left: 57.8%;
+                transform: translateX(-50%);
+                bottom: 1.75rem;
+                top: auto;
+            }
+        }
+    }
+}

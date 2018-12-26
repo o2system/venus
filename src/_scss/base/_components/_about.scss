@@ -1,0 +1,238 @@
+.about{
+    .content-left{
+        padding: 0px 0px 0px 50px;
+        @include device(tablet) {
+            padding-left: 0;
+            max-width: 100%;
+            flex: 1;
+        }
+
+        @include device(mobile) {
+            padding-left: 0;
+            max-width: 100%;
+            flex: 1;
+        }
+        .content{
+            padding: 60px 30px 100px;
+            background-image: linear-gradient(40deg, $primary 0%, lighten($primary, 20%) 100%);
+            height: 100%;
+            color: #fff;
+            position: relative;
+            bottom: -30px;
+            margin-bottom: -30px;
+
+            @include device(tablet) {
+                bottom: 0px;
+                margin-bottom: 0px;
+                padding: 90px 30px 100px;
+            }
+
+            @include device(mobile) {
+                bottom: 0px;
+                margin-bottom: 0px;
+                padding: 90px 15px 100px;
+            }
+
+            h2{
+                margin-bottom: 20px;
+                font-weight: 700;
+                line-height: 45px;
+                font-size: 30px;
+            }
+            p{
+                font-weight: 300;
+                font-size: 15px;
+            }
+            .btn{
+                overflow: hidden;
+                display: inline-block;
+                font-weight: 500;
+                font-size: 14px;
+                z-index: 1;
+                cursor: pointer;
+                transition: all 0.3s linear;
+                margin-top: 40px;
+                border: 0;
+                &.btn-primary{
+                    padding: 17px 28px;
+                    background: #fbfbfd;
+                    -webkit-box-shadow: 0px 20px 30px 0px rgba(12, 0, 46, 0.1);
+                    box-shadow: 0px 20px 30px 0px rgba(12, 0, 46, 0.1);
+                    border-radius: 3px;
+                    color: $primary;
+                    display: inline-block;
+                    transition: all 0.3s ease;
+                    border: 0;
+                    &:hover{
+                        color: #fff;
+                        background: $primary;
+                    }
+                }
+            }
+        }
+    }
+    .content-right{
+        padding: 0px;
+        position: relative;
+        .icon{
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            color: $primary;
+            line-height: 100px;
+            font-size: 22px;
+            background-color: #fbfbfd;
+            -webkit-box-shadow: 0px 20px 30px 0px rgba(12, 0, 46, 0.14);
+            box-shadow: 0px 20px 30px 0px rgba(12, 0, 46, 0.14);
+            display: inline-block;
+            position: absolute;
+            bottom: -61px;
+            left: 0;
+            z-index: 2;
+        }
+        .about-slider{
+            .item{
+                .item-list{
+                    float: left;
+                    position: relative;
+                    z-index: 1;
+                    overflow: hidden;
+                    cursor: pointer;
+                    &.w45{
+                        width: 46.7%;
+                        @include device(mobile) {
+                            width: 100%;
+                        }
+                        .caption{
+                            position: absolute;
+                            bottom: 80px;
+                            padding: 0px 80px 0px 50px;
+                            left: 0;
+                            color: #fff;
+                            z-index: 1;
+                            transition: all 0.3s linear;
+                            .line{
+                                width: 50px;
+                                height: 5px;
+                                background: #fff;
+                                opacity: 0.30;
+                                margin-bottom: 25px;
+                                display: block;
+                            }
+                            h5{
+                                line-height: 28px;
+                                font-size: 18px;
+                                margin-bottom: 0!important;
+                            }
+                            &.two{
+                                bottom: 30px;
+                            }
+                        }
+                    }
+                    &.w55{
+                        width: 53.3%;
+                        @include device(mobile) {
+                            width: 100%;
+                        }
+                        .caption{
+                            position: absolute;
+                            bottom: 80px;
+                            padding: 0px 20px;
+                            left: 0;
+                            color: #fff;
+                            z-index: 1;
+                            transition: all 0.3s linear;
+                            .line{
+                                width: 50px;
+                                height: 5px;
+                                background: #fff;
+                                opacity: 0.30;
+                                margin-bottom: 25px;
+                                display: block;
+                            }
+                            h5{
+                                line-height: 28px;
+                                font-size: 18px;
+                                margin-bottom: 0!important;
+                            }
+                            &.two{
+                                bottom: 30px;
+                            }
+                        }
+                    }
+                    .img{
+                        img{
+                            width: 100%;
+                            max-width: 100%;
+                            transition: all 0.5s linear;
+                        }
+                    }
+                    &::after{
+                        content: "";
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        background: rgba(17, 22, 28, 0.7);
+                        position: absolute;
+                        opacity: 0;
+                        z-index: 0;
+                        transition: opacity 0.4s linear 0s;
+                    }
+                    &:hover{
+                        .img{
+                            img{
+                                transform: scale(1.03);
+                            }
+                        }
+                        &.w45{
+                            .caption{
+                                bottom: 90px;
+                            }
+                        }
+                        &.w55{
+                            .caption{
+                                bottom: 50px;
+                            }
+                        }
+                        &::after{
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+            .owl-dots{
+                position: absolute;
+                left: -48%;
+                bottom: 10px;
+                text-align: center;
+                margin-top: 75px;
+                @include device(tablet) {
+                    left: 30px;
+                    top: -63px;
+                    margin-top: 0px;
+                    bottom: auto;
+                }
+                .owl-dot{
+                    span{
+                        width: 8px;
+                        height: 8px;
+                        display: block;
+                        background: $white;
+                        border-radius: 50%;
+                        border: 1px solid $white;
+                        margin: 0px 5px;
+                        transition: all 0.3s linear;
+                    }
+                    &.active{
+                        span{
+                            background: transparent;
+                            transform: scale(1.7);
+                            border-color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

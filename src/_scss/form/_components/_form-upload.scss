@@ -1,0 +1,232 @@
+.dropzone-previews{
+	display: none;
+}
+.dz-template{
+	margin: 0 15px;
+	width: calc(100% / 3 - 30px);
+	display: inline-block;
+
+	@include device(tablet) {
+		width: calc(100% / 2 - 30px);
+	}
+	@include device(mobile) {
+		width: 100%;
+		margin: 0;
+		padding: 0 15px;
+	}
+}
+
+.dz-message{
+	text-align: center;
+	padding: 3rem 0;
+}
+
+.dz-started{
+	.dz-message{
+		display: none;
+	}
+}
+.media-list{
+	.media-list-item{
+		position: relative;
+		cursor: pointer;
+		color: $gray-900;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		margin-top: 15px;
+		margin-bottom: 15px;
+		font-size: 54px;
+
+		.media-list-action{
+			position: absolute;
+			right: 1rem;
+			top: 1rem;
+			z-index: 2;
+			opacity: 0;
+		}
+
+		.media-item-file-error {
+			opacity: 0;
+			display: none;
+		}
+
+		.media-item {
+            position: relative;
+			overflow: hidden;
+			height: 0;
+			padding-bottom: 100%;
+			background-color: $gray-600;
+            display: block;
+            cursor: pointer;
+            border: 2px solid transparent;
+
+            img{
+            	max-height: 100%;
+				max-width: none;
+                position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+            }
+
+            .media-item-file-details {
+            	position: absolute;
+			    left: auto;
+			    top: 50%;
+			    transform: translateY(-50%);
+			    width: 100%;
+			    text-align: center;
+
+			    .media-item-icon {
+				    position: relative;
+				    top: -8px;
+				    width: 25%;
+				    height: 0;
+				    margin: 0 auto;
+				    padding-bottom: 25%;
+				    line-height: .5;
+				    color: $gray-900;
+				}
+
+				.media-item-file-name {
+				    position: relative;
+				    overflow: hidden;
+				    max-width: 80%;
+				    margin: 0 auto;
+				    white-space: nowrap;
+				    color: $gray-900;
+				    font-size: 1rem;
+				}
+
+				.media-item-file-extension{
+					font-size: 0.7rem;
+					color: $gray-900;
+				}
+			}
+        }
+
+		&.uploading{
+			&:before{
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				background: rgba($white, 0.7);
+				display: block;
+				content: "";
+				z-index: 2;
+			}
+			.upload-progress{
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 80%;
+				margin: 0 auto;
+				z-index: 3;
+
+				.progress{
+					height: 5px;
+				}
+			}
+		}
+
+		&:hover{
+			.media-list-action{
+				opacity: 1;
+			}
+		}
+	}
+
+	.dz-error{
+		.media-list-item{
+			&:before{
+				position: absolute;
+				content: "";
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				background-color: $danger;
+				opacity: 0.8;
+				z-index: 2;
+			}
+
+			.media-item-file-error {
+				display: block;
+				opacity: 1;
+            	position: absolute;
+			    left: auto;
+			    top: 50%;
+			    transform: translateY(-50%);
+			    width: 100%;
+			    text-align: center;
+			    z-index: 3;
+
+			    .media-item-icon-error {
+				    position: relative;
+				    top: -8px;
+				    width: 25%;
+				    height: 0;
+				    margin: 0 auto;
+				    padding-bottom: 25%;
+				    line-height: .5;
+				    color: $white;
+				}
+
+				.media-item-file-name-error {
+				    position: relative;
+				    overflow: hidden;
+				    max-width: 80%;
+				    margin: 0 auto;
+				    color: $white;
+				    font-size: 1rem;
+				}
+
+				.media-item-file-extension-error{
+					margin-top: 1rem;
+				}
+			}
+
+			&:hover{
+				.media-list-action{
+					opacity: 0;
+				}
+			}
+		}
+	}
+}
+
+.media-editor-wrapper{
+	position: relative;
+	background-color: $gray-600;
+	box-shadow: inset 0 0 2px 2px rgba(168,190,206,0.1);
+
+	img{
+		width: 100%;
+		height: auto;
+	}
+}
+
+.modal-scroll{
+	.modal-dialog{
+      	overflow-y: initial !important
+	}
+	.modal-body{
+	  	height: 350px;
+	  	overflow-y: auto;
+	}
+}
+
+.modal-media{
+	width: 90%;
+	max-width: 90%;
+}
+
+.dropzone {
+	background: none;
+	.dz-message {
+    	display: none;
+    }
+}

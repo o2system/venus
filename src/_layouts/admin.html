@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+  	{% include head.html %}
+
+  	<body class="venus-admin">
+  		<header class="header">
+  			{% include admin-header.html %}
+  		</header>
+  		<aside class="sidebar-left">
+  			{% include admin-sidebar-left.html %}
+  		</aside>
+    	<main class="main">
+        	{{ content }}
+    	</main>
+
+    {% include scripts.html %}
+
+  	</body>
+
+</html>

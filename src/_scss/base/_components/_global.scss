@@ -1,0 +1,86 @@
+body {
+  	color: $body-color;
+    overflow-x: hidden;
+}
+.title{
+	margin-bottom: 4rem;
+	h1, h2, h3, h4, h5, h6{
+		line-height: 1.5;
+	}
+
+	h1, h2{
+		font-weight: 700;
+		color: $gray-900;
+	}
+
+	h3, h4, h5, h6{
+		color: $body-color;
+	}
+}
+
+a{
+    outline: none !important;
+}
+
+section{
+	padding: 80px 0;
+}
+
+.owl-dots{
+    text-align: center;
+    margin-top: 75px;
+    .owl-dot{
+        span{
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: $gray-500;
+            margin: 0px 5px;
+            border: 1px solid $gray-500;
+            display: block;
+            transition: all 0.3s linear;
+
+        }
+        &.active{
+            span{
+                background: transparent;
+                transform: scale(1.7);
+                border-color: $primary;
+            }
+
+        }
+        &:focus{
+            outline: none;
+        }
+    }
+}
+
+.shape{
+    position: absolute;
+    opacity: 0.02;
+    transform: rotate(45deg);
+    border-radius: 45px;
+    left: 90px;
+    z-index: -1;
+    &.one{
+        background-image: linear-gradient( 140deg, rgb(125,13,240) 0%, rgb(12,182,231) 100%);
+        width: 650px;
+        height: 510px;
+        top: -155%;
+
+    }
+    &.two{
+        background-image: linear-gradient( 140deg, rgb(125,13,240) 0%, rgb(12,182,231) 100%);
+        width: 666px;
+        height: 330px;
+        top: -145%;
+        left: 290px;
+    }
+
+}
+
+.remove-caret{
+    &:after{
+        display: none;
+    }
+}

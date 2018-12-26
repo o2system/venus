@@ -1,0 +1,189 @@
+---
+layout: admin
+---
+<div class="container-fluid">
+	<div class="page-title">
+		<div class="row align-items-center">
+			<div class="col-md-8">
+				<h4>Form</h4>
+				<ol class="breadcrumb mb-0">
+					<li class="breadcrumb-item">
+						<a href="#">Venus</a>
+					</li>
+					<li class="breadcrumb-item">
+						<a href="#">Pages</a>
+					</li>
+					<li class="breadcrumb-item active" aria-current="page">Form Picker</li>
+				</ol>
+			</div>
+			<div class="col-md-4 text-right">
+				<div class="dropdown">
+				  	<button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				    	<i class="fas fa-cog"></i> Action
+				  	</button>
+				  	<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+				    	<a class="dropdown-item" href="#">Action</a>
+				    	<a class="dropdown-item" href="#">Another action</a>
+				    	<a class="dropdown-item" href="#">Something else here</a>
+				  	</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-6">
+			<div class="card">
+				<div class="card-body">
+                    <h4>Timepicker</h4>
+                    <p class="text-muted">
+                        Easily select a time for a text input using your mouse or keyboards arrow keys.
+                    </p>
+
+                    <div class="form-group">
+                        <label>Default Time Picker</label>
+
+                        <div class="input-group">
+                            <input type="text" class="form-control timepicker">
+                            <div class="input-group-append">
+                                <span class="input-group-text"><i class="fas fa-clock"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>24 Hour Mode Time Picker</label>
+
+                        <div class="input-group">
+                            <input type="text" class="form-control timepicker-24">
+                            <div class="input-group-append">
+                                <span class="input-group-text"><i class="fas fa-clock"></i></span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label>Specify a step for the minute field</label>
+
+                        <div class="input-group">
+                            <input type="text" class="form-control timepicker-step">
+                            <div class="input-group-append">
+                                <span class="input-group-text"><i class="fas fa-clock"></i></span>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-6">
+			<div class="card">
+				<div class="card-body">
+                    <h4>Date Range Picker</h4>
+                    <p class="text-muted">
+                        A JavaScript component for choosing date ranges.
+                        Designed to work with the Bootstrap CSS framework.
+                    </p>
+
+                    <form>
+                        <div class="form-group">
+                            <label>With all options</label>
+                            <input type="text" class="form-control reportrange"/>
+                        </div>
+                        <div class="form-group">
+                            <label>Date Range Pick</label>
+                            <div>
+                                <input class="form-control input-daterange-datepicker" type="text" name="daterange" value="01/01/2017 - 01/31/2018"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Date Range With Time</label>
+                            <div>
+                                <input type="text" class="form-control input-daterange-timepicker" name="daterange" value="01/01/2017 1:30 PM - 01/01/2017 2:00 PM"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Limit Selectable Dates</label>
+                            <div>
+                                <input class="form-control input-limit-datepicker" type="text" name="daterange" value="06/01/2017 - 06/07/2017"/>
+                            </div>
+                        </div>
+                    </form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="card-body">
+
+            <h4>Date Picker</h4>
+            <p class="text-muted">
+                The datepicker is tied to a standard form input field. Click on the input to open
+                an interactive calendar in a small overlay. Click elsewhere on the page or hit the Esc
+                key to close. If a date is chosen, feedback is shown as the input's value.
+            </p>
+
+            <form action="#">
+            	<div class="row">
+            		<div class="col-lg-8">
+		                <div class="form-group">
+		                    <label>Default Functionality</label>
+		                    <div>
+		                        <div class="input-group">
+		                            <input type="text" class="form-control datepicker" placeholder="mm/dd/yyyy">
+		                            <div class="input-group-append">
+		                                <span class="input-group-text"><i class="fas fa-calendar"></i></span>
+		                            </div>
+		                        </div>
+		                    </div>
+		                </div>
+
+		                <div class="form-group">
+		                    <label>Auto Close</label>
+		                    <div>
+		                        <div class="input-group">
+		                            <input type="text" class="form-control datepicker-autoclose" placeholder="mm/dd/yyyy">
+		                            <div class="input-group-append">
+		                                <span class="input-group-text"><i class="fas fa-calendar"></i></span>
+		                            </div>
+		                        </div>
+		                    </div>
+		                </div>
+
+		                <div class="form-group">
+		                    <label>Multiple Date</label>
+		                    <div>
+		                        <div class="input-group">
+		                            <input type="text" class="form-control datepicker-multiple-date" placeholder="mm/dd/yyyy">
+		                            <div class="input-group-append">
+		                                <span class="input-group-text"><i class="fas fa-calendar"></i></span>
+		                            </div>
+		                        </div>
+		                    </div>
+		                </div>
+
+		                <div class="form-group">
+		                    <label>Date Range</label>
+		                    <div>
+		                        <div class="input-daterange input-group date-range" id="date-range">
+		                            <input type="text" class="form-control" name="start" />
+		                            <input type="text" class="form-control" name="end" />
+		                        </div>
+		                    </div>
+		                </div>
+            		</div>
+
+            		<div class="col-lg-4">
+            			<label>Display Inline</label>
+                        <div class="center-block" style="margin: 10px auto">
+                            <div class="datepicker-inline"></div>
+                        </div><!-- input-group -->
+            		</div>
+            	</div>
+
+            </form>
+		</div>
+	</div>
+</div>
