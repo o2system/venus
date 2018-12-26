@@ -3,6 +3,6 @@
     "/assets/css/venus.css": "/assets/css/venus.css",
     "/assets/js/venus.js.map": "/assets/js/venus.js.map",
     "/assets/css/venus.css.map": "/assets/css/venus.css.map",
-    "/dist/venus.css": "/dist/venus.css",
-    "/dist/venus.js": "/dist/venus.js"
+    "/dist/css/venus.css": "/dist/css/venus.css",
+    "/dist/js/venus.js": "/dist/js/venus.js"
 }

@@ -13,13 +13,18 @@ let mix = require('webpack-mix').mix
  .js('src/_js/venus.js', 'assets/js/')
  .sass('src/_scss/venus.scss', 'assets/css/')
 
- .copy('./src/assets/css/venus.css', './dist/venus.css')
- .copy('./src/assets/js/venus.js', './dist/venus.js')
+ .copy('./src/assets/css/venus.css', './dist/css/venus.css')
+ .copy('./src/assets/js/venus.js', './dist/js/venus.js')
 
+ .copyDirectory('./src/assets/img/banner', './dist/img/banner')
  .copyDirectory('node_modules/@fortawesome/fontawesome-free/webfonts', './src/assets/webfonts')
  .copyDirectory('node_modules/tinymce/plugins', './src/assets/js/plugins')
  .copyDirectory('node_modules/tinymce/skins', './src/assets/js/skins')
  .copyDirectory('node_modules/tinymce/themes', './src/assets/js/themes')
+ .copyDirectory('node_modules/@fortawesome/fontawesome-free/webfonts', './dist/webfonts')
+ .copyDirectory('node_modules/tinymce/plugins', './dist/js/plugins')
+ .copyDirectory('node_modules/tinymce/skins', './dist/js/skins')
+ .copyDirectory('node_modules/tinymce/themes', './dist/js/themes')
  // .copyDirectory()
 
 
