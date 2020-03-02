@@ -1,4 +1,7 @@
-# venus
+![alt text](https://repository-images.githubusercontent.com/159328324/ba1a5780-5ca1-11ea-8372-68bce27f6970 "O2System Venus Package")
+
+# O2System Venus
+O2System Venus is a theme package for O2System Framework Project Based Boilerplates
 
 
 ## Features
